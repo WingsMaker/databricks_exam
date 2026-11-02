@@ -1,0 +1,143 @@
+Question 1
+
+A data engineer needs to calculate each customer's running total purchase amount over time while preserving individual transaction rows.
+
+Which transformation is MOST appropriate?
+
+A. Window function
+
+B. Cross join
+
+C. Materialized view
+
+D. Column mask
+
+Question 2
+
+A pipeline must combine records from a customer table and an orders table using the customer ID field.
+
+Which transformation is MOST appropriate?
+
+A. Watermark
+
+B. Join
+
+C. Auto Loader
+
+D. Expectation
+
+Question 3
+
+A large dataset contains sales transactions. The business wants total revenue broken down by region and month.
+
+Which operation is MOST appropriate?
+
+A. CDC
+
+B. Aggregation
+
+C. Column masking
+
+D. Lakehouse Federation
+
+Question 4
+
+A bronze table stores raw JSON payloads with different structures from different producers. Engineers want to store the payloads without enforcing a fixed schema during ingestion.
+
+Which approach best aligns with the exam guide?
+
+A. Convert every payload to CSV
+
+B. Store as a STRING and use regex exclusively
+
+C. Parse into a VARIANT column
+
+D. Flatten into hundreds of columns during ingestion
+
+Question 5
+
+An engineer needs to extract "customer_id" from a VARIANT column containing semi-structured data.
+
+Which functionality is designed for this purpose?
+
+A. VACUUM
+
+B. variant_get
+
+C. OPTIMIZE
+
+D. Lakeflow Connect
+
+Question 6
+
+A team receives API responses as JSON strings and wants to convert them into a semi-structured data type suitable for flexible querying.
+
+Which function is most relevant?
+
+A. parse_json
+
+B. collect_set
+
+C. current_timestamp
+
+D. coalesce
+
+Question 7
+
+A company wants to classify incoming support tickets using a foundation model directly from SQL without manually exporting data to another system.
+
+Which Section 3 capability is most directly applicable?
+
+A. Liquid Clustering
+
+B. ai_query
+
+C. Lakehouse Federation
+
+D. Delta Cache
+
+Question 8
+
+A data engineering pipeline should enrich product descriptions by generating AI-derived categories before records move to downstream layers.
+
+Which exam-guide objective best matches this use case?
+
+A. AI functions for enrichment and classification
+
+B. Query profiling
+
+C. Lakeflow Connect CDC
+
+D. Data purging
+
+Question 9
+
+A Lakeflow Pipeline receives occasionally malformed records. Business requirements state that invalid records should continue through the pipeline but must be routed to a separate location for later review.
+
+Which expectation behaviour most closely matches the requirement?
+
+A. Fail processing
+
+B. Quarantine bad records
+
+C. Delete source files
+
+D. Drop the entire batch
+
+Question 10
+
+A dataset contains mandatory business keys. If any record is missing a required key, processing must stop immediately so that downstream systems are not affected.
+
+Which expectation action best fits the requirement?
+
+A. Quarantine
+
+B. Ignore
+
+C. Fail
+
+D. Aggregate
+
+Answers:
+1:A, 2:B, 3:B, 4:C, 5:B, 6:A, 7:B, 8:A, 9:B, 10:C
+

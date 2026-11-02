@@ -1,0 +1,145 @@
+Question 1
+
+A data engineering team wants Databricks to automatically handle routine table maintenance tasks and reduce the amount of manual optimisation work required over time.
+
+Which combination best aligns with this goal?
+
+A. Unity Catalog managed tables and Predictive Optimization
+
+B. Delta Cache and Auto Loader
+
+C. Lakehouse Federation and OpenSharing
+
+D. Materialized Views and Metric Views
+
+Question 2
+
+A large Delta table is queried primarily by customer_id, but the query patterns are expected to evolve over time and should not require frequent repartitioning of the table.
+
+Which optimisation approach is most appropriate?
+
+A. Partition by customer_id
+
+B. Liquid Clustering
+
+C. Convert to CSV
+
+D. Disable data skipping
+
+Question 3
+
+A Delta table receives thousands of small UPDATE and DELETE operations every hour through MERGE statements.
+
+The team wants to minimise file rewriting caused by these changes.
+
+Which feature most directly addresses this concern?
+
+A. Delta Cache
+
+B. Materialized Views
+
+C. Deletion Vectors
+
+D. Query Profile
+
+Question 4
+
+An engineer wants Databricks to automatically determine and maintain an effective clustering strategy instead of explicitly choosing clustering columns.
+
+Which feature is most relevant?
+
+A. VACUUM
+
+B. CLUSTER BY AUTO
+
+C. Lakeflow Connect
+
+D. Watermarking
+
+Question 5
+
+A downstream application only needs rows that changed since the previous run and must process inserts, updates, and deletes efficiently.
+
+Which Delta Lake capability best fits the requirement?
+
+A. Delta Cache
+
+B. Change Data Feed (CDF)
+
+C. Materialized Views
+
+D. Query History
+
+Question 6
+
+A business analyst repeatedly runs very similar queries against the same underlying data during an interactive investigation session.
+
+Which feature is most directly associated with improving performance for repeated reads?
+
+A. Delta Cache
+
+B. Lakehouse Federation
+
+C. OpenSharing
+
+D. Query Alerts
+
+Question 7
+
+A query is running much slower than expected. The engineer needs to determine whether shuffle operations and join strategies are contributing to the problem.
+
+Which tool should be examined first?
+
+A. Git Folder History
+
+B. Query Profile
+
+C. Unity Catalog Explorer
+
+D. Delta Sharing
+
+Question 8
+
+A team wants to understand whether poor data skipping is contributing to slow query execution.
+
+Which tool provides information most relevant to this investigation?
+
+A. Query Profile
+
+B. Auto Loader
+
+C. System Billing Tables
+
+D. Lakeflow Jobs
+
+Question 9
+
+A very large table currently uses partitioning and ZORDER. The team is evaluating whether to move to Liquid Clustering.
+
+According to the Section 5 objectives, the primary evaluation should focus on:
+
+A. Dashboard colours and report layouts
+
+B. Table size and query access patterns
+
+C. Number of Git branches
+
+D. Number of workspace users
+
+Question 10
+
+A company stores a massive dataset with access patterns that frequently change over time.
+
+Which statement best reflects the type of optimisation decision covered by Section 5?
+
+A. Always partition by the highest-cardinality column
+
+B. Always use ZORDER regardless of workload
+
+C. Choose between partitioning, ZORDER, and Liquid Clustering based on workload characteristics
+
+D. Avoid all physical data layout optimisations
+
+Answers:
+1:A, 2:B, 3:C, 4:B, 5:B, 6:A, 7:B, 8:A, 9:B, 10:C
+

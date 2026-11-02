@@ -1,0 +1,142 @@
+Question 1
+
+A data engineer must build a pipeline that continuously ingests JSON, CSV, and Parquet files arriving in cloud object storage. New files should be detected automatically without manually tracking which files have already been processed.
+
+Which approach is MOST appropriate?
+
+A. Schedule hourly full-table reloads using JDBC
+
+B. Use Auto Loader to incrementally discover and process new files
+
+C. Export all files to Delta format before ingestion
+
+D. Use Lakehouse Federation to query the files directly
+
+Question 2
+
+An organisation needs to ingest clickstream events from Apache Kafka into the lakehouse with low latency.
+
+Which source type is specifically identified in the exam guide as a supported ingestion source?
+
+A. Apache Kafka
+
+B. Excel spreadsheets
+
+C. Git repositories
+
+D. Unity Catalog
+
+Question 3
+
+A team wants to maintain an Iceberg table that receives insert, update, and delete changes from an operational source system.
+
+Which capability is most directly aligned with this requirement?
+
+A. Unity Catalog tags
+
+B. Lakeflow Pipelines CDC ingestion
+
+C. Query Profile
+
+D. Delta Cache
+
+Question 4
+
+A company wants to continuously replicate data changes from a PostgreSQL database into Databricks with minimal custom development effort.
+
+Which solution best fits the requirement?
+
+A. Nightly CSV exports to cloud storage
+
+B. Manual JDBC ingestion scripts
+
+C. Lakeflow Connect CDC ingestion
+
+D. Delta Sharing
+
+Question 5
+
+A business partner uses Databricks, while another partner uses a non-Databricks platform. Your organisation needs to securely share data with both partners.
+
+Which Section 2 objective is most relevant?
+
+A. Materialised Views
+
+B. OpenSharing (D2D and Databricks-to-Open)
+
+C. Metric Views
+
+D. Auto Loader
+
+Question 6
+
+An engineer must query data stored in an external database while maintaining governance through Unity Catalog permissions and centrally managed connection credentials.
+
+Which feature is designed for this scenario?
+
+A. Lakehouse Federation
+
+B. Auto CDC
+
+C. Structured Streaming
+
+D. Delta Cache
+
+Question 7
+
+A team needs to ingest images and PDF documents into a data processing pipeline.
+
+Which file format category mentioned in the exam guide best matches this use case?
+
+A. VARIANT
+
+B. Binary
+
+C. JDBC
+
+D. Materialised View
+
+Question 8
+
+A company wants to collaborate with another organisation on sensitive data without directly exposing underlying records and while enforcing privacy controls.
+
+Which technology in Section 2 is most closely associated with this requirement?
+
+A. Clean Rooms
+
+B. Query History
+
+C. Predictive Optimisation
+
+D. CLUSTER BY AUTO
+
+Question 9
+
+A data engineer is designing ingestion architecture and must choose among Kafka, Kinesis, Pub/Sub, and cloud storage as sources.
+
+What common theme do these systems share within the exam guide?
+
+A. They are governance tools
+
+B. They are supported ingestion-source categories
+
+C. They are monitoring solutions
+
+D. They are deployment mechanisms
+
+Question 10
+
+A company already stores data in Delta format and wants to capture row-level changes from an upstream source while preserving inserts, updates, and deletes in the target table.
+
+Which Section 2 objective is most closely related?
+
+A. Lakeflow Connect monitoring
+
+B. CDC pipelines using Lakeflow Pipelines with Delta or Iceberg targets
+
+C. OpenSharing
+
+D. Databricks Git folders
+
+Answers:
+1:B, 2:A, 3:B, 4:C, 5:B, 6:A, 7:B, 8:A, 9:B, 10:B

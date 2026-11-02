@@ -1,0 +1,143 @@
+Question 1
+
+A data engineer is designing permissions for a new analytics platform. The requirement is that users should receive only the minimum privileges necessary to perform their jobs.
+
+Which security principle best aligns with this requirement?
+
+A. Open access
+
+B. Shared ownership
+
+C. Least privilege
+
+D. Full catalog inheritance
+
+Question 2
+
+A company wants to secure Unity Catalog objects so that analysts can query tables but cannot modify them.
+
+Which approach best supports this requirement?
+
+A. Grant ownership of the tables
+
+B. Apply appropriate ACLs
+
+C. Disable Unity Catalog
+
+D. Use Delta Cache
+
+Question 3
+
+An organisation has hundreds of PII columns spread across many current and future tables. They want one centrally managed policy that automatically masks any column tagged as PII.
+
+Which solution is most appropriate?
+
+A. Create a dynamic view for every table
+
+B. Manually alter every column
+
+C. Use an ABAC policy with governed tags and column masking
+
+D. Create a separate catalog for every PII table
+
+Question 4
+
+A company wants users in the Europe region to see only records belonging to Europe, regardless of which table they query.
+
+Which capability is most closely associated with this requirement?
+
+A. Row filters
+
+B. Delta Cache
+
+C. Predictive Optimization
+
+D. Materialized Views
+
+Question 5
+
+A security team wants to hide only specific sensitive columns while still allowing users to view the remaining columns in a table.
+
+Which feature is designed for this use case?
+
+A. Lakehouse Federation
+
+B. Column masks
+
+C. VACUUM
+
+D. Auto Loader
+
+Question 6
+
+An engineer must protect personally identifiable information by replacing values with irreversible representations while preserving the ability to identify duplicate records.
+
+Which technique best matches this description?
+
+A. Partitioning
+
+B. Hashing
+
+C. Liquid Clustering
+
+D. Materialized Views
+
+Question 7
+
+A compliance requirement states that certain confidential values must be replaced with surrogate tokens that can later be mapped back to the original values through a controlled process.
+
+Which technique best aligns with this requirement?
+
+A. Tokenization
+
+B. Aggregation
+
+C. Delta Cache
+
+D. Watermarking
+
+Question 8
+
+A company wants all incoming batch and streaming datasets to undergo automated PII detection and masking before downstream consumption.
+
+Which Section 6 objective is most directly related?
+
+A. Query profiling
+
+B. PII detection and masking controls using Unity Catalog features
+
+C. Delta Sharing
+
+D. Change Data Feed
+
+Question 9
+
+A customer invokes a GDPR right-to-erasure request and requires all relevant personal data to be removed according to corporate retention policies.
+
+Which Section 6 objective most directly applies?
+
+A. Metric Views
+
+B. Data purging strategy using Delta Lake and Unity Catalog features
+
+C. Delta Cache
+
+D. Query History
+
+Question 10
+
+An organisation wants security rules to scale automatically as new datasets are created, instead of manually configuring masks and filters on every table.
+
+Which approach is most aligned with the exam guide?
+
+A. Create individual policies on every object
+
+B. Use governed tags with ABAC policies
+
+C. Disable inheritance
+
+D. Store data in CSV files
+
+Answers:
+1:C, 2:B, 3:C, 4:A, 5:B, 6:B, 7:A, 8:B, 9:B, 10:B
+

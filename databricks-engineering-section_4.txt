@@ -1,0 +1,144 @@
+Question 1
+
+A platform team needs to identify which jobs and SQL warehouses generated the highest DBU consumption last month using governed data available through Unity Catalog.
+
+Which source should they use?
+
+A. Spark UI
+
+B. Driver logs
+
+C. Databricks system tables
+
+D. Git folders
+
+Question 2
+
+An engineer wants to determine which users have recently accessed sensitive datasets for auditing purposes.
+
+Which category of system tables is most relevant?
+
+A. Access
+
+B. Lakeflow
+
+C. Billing
+
+D. Pricing
+
+Question 3
+
+A team wants to automate retrieval of job execution status and pipeline health information from external monitoring software.
+
+Which approach best aligns with the exam objectives?
+
+A. Query browser history
+
+B. Use REST APIs, CLI, or SDK
+
+C. Download notebook exports
+
+D. Use Delta Cache
+
+Question 4
+
+A Lakeflow Pipeline begins dropping more records than expected because of data quality expectation failures.
+
+Which source would be MOST useful for investigating the issue?
+
+A. Cluster policy definitions
+
+B. Workspace file browser
+
+C. Pipeline event logs
+
+D. Git commit history
+
+Question 5
+
+A business stakeholder wants an automatic notification whenever a governed business metric exceeds a defined threshold.
+
+Which Databricks capability is designed for this requirement?
+
+A. VACUUM
+
+B. Lakehouse Alerts
+
+C. Auto Loader
+
+D. Watermarks
+
+Question 6
+
+A team wants to monitor SQL warehouse health and receive proactive notifications when query performance degrades.
+
+Which feature from Section 4 is specifically intended for this type of monitoring?
+
+A. Lakehouse Alerts
+
+B. Delta Sharing
+
+C. Materialized Views
+
+D. Unity Catalog Tags
+
+Question 7
+
+An organisation wants to analyse historical pipeline operational activity using governed monitoring data.
+
+Which system-table family is most closely associated with this requirement?
+
+A. Lakeflow
+
+B. Catalog
+
+C. Variant
+
+D. Compute Cache
+
+Question 8
+
+A Lakeflow Job fails in production overnight. An engineer needs to determine task execution status, duration, and execution history.
+
+Which tool is most directly designed for this purpose?
+
+A. Query Profile
+
+B. Lakeflow Jobs UI and Jobs API
+
+C. Metric Views
+
+D. Column Masks
+
+Question 9
+
+A security team wants automated monitoring for suspicious audit and security events occurring across the platform.
+
+Which Section 4 capability is most relevant?
+
+A. Delta Cache
+
+B. Lakehouse Alerts
+
+C. Liquid Clustering
+
+D. Lakehouse Federation
+
+Question 10
+
+A company wants to create dashboards showing trends in compute usage, cost, and workload activity over time using centrally governed platform metadata.
+
+Which approach is most aligned with the exam guide?
+
+A. Query Databricks system tables
+
+B. Download cluster screenshots daily
+
+C. Export Spark UI pages manually
+
+D. Inspect notebook revision histories
+
+
+Answers:
+1:C, 2:A, 3:B, 4:C, 5:B, 6:A, 7:A, 8:B, 9:B, 10:A
+

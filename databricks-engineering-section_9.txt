@@ -1,0 +1,147 @@
+Question 1
+
+A data engineer is designing a very large Delta table. Queries typically filter by business date and regularly scan data for specific date ranges.
+
+According to the Section 9 objectives, what is the primary purpose of partitioning?
+
+A. Improve data discoverability
+
+B. Align physical data layout with the data grain and access pattern
+
+C. Replace clustering
+
+D. Eliminate the need for compaction
+
+Question 2
+
+A table contains billions of records. Most queries filter by customer identifiers and related attributes rather than by partition columns.
+
+Which table-layout technique is most directly associated with optimising these access patterns?
+
+A. Column masking
+
+B. Materialized Views
+
+C. Clustering
+
+D. Delta Sharing
+
+Question 3
+
+A large table contains a growing number of very small files created through incremental ingestion.
+
+Which maintenance goal is specifically called out in Section 9?
+
+A. Balanced file sizes through compaction
+
+B. Row-level security
+
+C. AI classification
+
+D. Lakehouse Federation
+
+Question 4
+
+A data engineering team is designing analytical reporting structures using facts and dimensions.
+
+Which modelling approach is most closely aligned with the Section 9 objectives?
+
+A. Dimensional modelling
+
+B. Event sourcing
+
+C. Git branching
+
+D. Workflow orchestration
+
+Question 5
+
+Several dashboards repeatedly execute expensive joins and aggregations against a sales fact table.
+
+The team wants pre-computed results available for fast query performance.
+
+Which feature is most appropriate?
+
+A. Query Profile
+
+B. Materialized View
+
+C. Governed Tags
+
+D. Watermark
+
+Question 6
+
+A business metric called "Net Revenue" is currently implemented differently by multiple teams, leading to inconsistent reporting results.
+
+Which feature most directly addresses this governance problem?
+
+A. Metric View
+
+B. Delta Cache
+
+C. Cluster Logs
+
+D. Auto Loader
+
+Question 7
+
+A company wants a single governed definition for "Active Customer" that can be reused consistently across many reports.
+
+Which capability best fits this requirement?
+
+A. Materialized View
+
+B. Metric View
+
+C. Deletion Vectors
+
+D. Change Data Feed
+
+Question 8
+
+A team needs both:
+
+one authoritative business-metric definition, and
+pre-computed aggregates for dashboard performance.
+
+Which combination best satisfies both requirements?
+
+A. Delta Cache and Watermarks
+
+B. Lakeflow Jobs and Query Profile
+
+C. Metric Views and Materialized Views
+
+D. Auto Loader and Lakehouse Federation
+
+Question 9
+
+When designing table layouts for large data assets, Section 9 specifically mentions evaluating which relationship?
+
+A. Clustering and relationship access patterns
+
+B. Git branches and deployment targets
+
+C. Watermarks and checkpoints
+
+D. Tags and comments
+
+Question 10
+
+A company is designing a scalable analytical platform.
+
+According to the Section 9 objectives, which combination represents the most complete data-modeling strategy?
+
+A. Partitioning, clustering, compaction, dimensional modelling, Materialized Views, and Metric Views
+
+B. Delta Cache, Query Profile, and Cluster Logs
+
+C. Auto Loader, Lakeflow Connect, and OpenSharing
+
+D. Row Filters, Column Masks, and ABAC Policies
+
+Answers:
+1:B, 2:C, 3:A, 4:A, 5:B, 6:A, 7:B, 8:C, 9:A, 10:A
+
+

@@ -1,0 +1,142 @@
+Question 1
+
+A data engineering team wants to deploy the same jobs, pipelines, and configuration across development, staging, and production environments. Each environment requires slightly different settings, and deployments must integrate with CI/CD processes.
+
+Which approach best meets these requirements?
+
+A. Export resources from the UI and manually import them into each environment
+
+B. Store resource definitions in a Declarative Automation Bundle with environment-specific targets
+
+C. Create resources separately in each workspace
+
+D. Use notebooks only and avoid declarative resource definitions
+
+Question 2
+
+A serverless job fails during startup because two Python packages require incompatible versions of the same dependency.
+
+What is the MOST likely area the engineer should investigate?
+
+A. Watermark configuration
+
+B. Delta table optimisation settings
+
+C. Dependency conflicts between external libraries
+
+D. Lakeflow Job control-flow operators
+
+Question 3
+
+A team needs a custom function that can be centrally governed and reused across multiple SQL workloads in Unity Catalog.
+
+Which solution is MOST appropriate?
+
+A. Python script stored on DBFS
+
+B. Manual SQL copy-and-paste
+
+C. Unity Catalog function
+
+D. Materialised view
+
+Question 4
+
+A streaming ingestion solution must automatically detect and process new files arriving in cloud storage with minimal operational overhead.
+
+Which technology should be included?
+
+A. Auto Loader
+
+B. Query Profile
+
+C. Metric Views
+
+D. Lakehouse Federation
+
+Question 5
+
+A pipeline aggregates transactional data. Business users require results that include corrections and late-arriving updates to historical records and can be refreshed on a schedule.
+
+Which object should be used?
+
+A. Streaming table
+
+B. Temporary view
+
+C. Materialised view
+
+D. Checkpoint location
+
+Question 6
+
+An engineer must implement a Slowly Changing Dimension Type 2 workflow using change data capture in a Lakeflow Pipeline.
+
+Which feature is specifically associated with this requirement?
+
+A. Liquid Clustering
+
+B. AUTO CDC APIs with stored_as_scd_type
+
+C. Delta Cache
+
+D. Query History
+
+Question 7
+
+A company needs to process clickstream events in near real time. The solution requires event-time aggregations, late-data handling, and exactly-once recovery after failures.
+
+Which Structured Streaming concepts are MOST relevant?
+
+A. Watermarks and checkpoints
+
+B. VACUUM and OPTIMIZE
+
+C. Metric Views and Alerts
+
+D. Catalogs and Schemas
+
+Question 8
+
+A workflow must branch based on whether a data quality check succeeds and then iterate over a list of source systems.
+
+Which Lakeflow Jobs capabilities are designed for this use case?
+
+A. Materialised Views and Auto Loader
+
+B. If/Else and For Each
+
+C. Delta Cache and Predictive Optimisation
+
+D. Unity Catalog Tags and Comments
+
+Question 9
+
+A notebook task repeatedly runs out of memory when processing large datasets.
+
+Which action is most aligned with the exam guide objective regarding compute selection?
+
+A. Increase watermark delay
+
+B. Choose compute designed for high-memory notebook workloads
+
+C. Convert the workload into a metric view
+
+D. Remove checkpoints
+
+Question 10
+
+A team wants automated tests that verify both DataFrame contents and schema correctness before code is promoted to production.
+
+Which set of testing tools is most closely aligned with the exam guide?
+
+A. assertDataFrameEqual and assertSchemaEqual
+
+B. OPTIMIZE and VACUUM
+
+C. Auto Loader and Lakehouse Federation
+
+D. Delta Cache and Query Profile
+
+Answers:
+1:B, 2:C, 3:C, 4:A, 5:C, 6:B, 7:A, 8:B, 9:B, 10:A
