@@ -1,0 +1,12 @@
+An engineer must implement a Slowly Changing Dimension Type 2 workflow using change data capture in a Lakeflow Pipeline.
+
+Which feature is specifically associated with this requirement?
+
+A. Liquid Clustering
+
+B. AUTO CDC APIs with stored_as_scd_type
+
+C. Delta Cache
+
+D. Query History
+
