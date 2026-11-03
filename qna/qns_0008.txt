@@ -1,0 +1,12 @@
+A workflow must branch based on whether a data quality check succeeds and then iterate over a list of source systems.
+
+Which Lakeflow Jobs capabilities are designed for this use case?
+
+A. Materialised Views and Auto Loader
+
+B. If/Else and For Each
+
+C. Delta Cache and Predictive Optimisation
+
+D. Unity Catalog Tags and Comments
+
