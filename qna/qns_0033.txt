@@ -1,0 +1,12 @@
+A team wants to automate retrieval of job execution status and pipeline health information from external monitoring software.
+
+Which approach best aligns with the exam objectives?
+
+A. Query browser history
+
+B. Use REST APIs, CLI, or SDK
+
+C. Download notebook exports
+
+D. Use Delta Cache
+

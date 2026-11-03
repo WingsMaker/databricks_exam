@@ -1,0 +1,12 @@
+A business stakeholder wants an automatic notification whenever a governed business metric exceeds a defined threshold.
+
+Which Databricks capability is designed for this requirement?
+
+A. VACUUM
+
+B. Lakehouse Alerts
+
+C. Auto Loader
+
+D. Watermarks
+

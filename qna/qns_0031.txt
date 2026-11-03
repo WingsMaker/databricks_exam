@@ -1,0 +1,12 @@
+A platform team needs to identify which jobs and SQL warehouses generated the highest DBU consumption last month using governed data available through Unity Catalog.
+
+Which source should they use?
+
+A. Spark UI
+
+B. Driver logs
+
+C. Databricks system tables
+
+D. Git folders
+

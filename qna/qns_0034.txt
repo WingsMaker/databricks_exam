@@ -1,0 +1,12 @@
+A Lakeflow Pipeline begins dropping more records than expected because of data quality expectation failures.
+
+Which source would be MOST useful for investigating the issue?
+
+A. Cluster policy definitions
+
+B. Workspace file browser
+
+C. Pipeline event logs
+
+D. Git commit history
+

@@ -1,0 +1,11 @@
+A Lakeflow Job fails in production overnight. An engineer needs to determine task execution status, duration, and execution history.
+
+Which tool is most directly designed for this purpose?
+
+A. Query Profile
+
+B. Lakeflow Jobs UI and Jobs API
+
+C. Metric Views
+
+D. Column Masks

@@ -1,0 +1,12 @@
+An engineer wants to determine which users have recently accessed sensitive datasets for auditing purposes.
+
+Which category of system tables is most relevant?
+
+A. Access
+
+B. Lakeflow
+
+C. Billing
+
+D. Pricing
+

@@ -1,0 +1,11 @@
+A security team wants automated monitoring for suspicious audit and security events occurring across the platform.
+
+Which Section 4 capability is most relevant?
+
+A. Delta Cache
+
+B. Lakehouse Alerts
+
+C. Liquid Clustering
+
+D. Lakehouse Federation

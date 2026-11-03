@@ -1,0 +1,11 @@
+An organisation wants to analyse historical pipeline operational activity using governed monitoring data.
+
+Which system-table family is most closely associated with this requirement?
+
+A. Lakeflow
+
+B. Catalog
+
+C. Variant
+
+D. Compute Cache

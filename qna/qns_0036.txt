@@ -1,0 +1,11 @@
+A team wants to monitor SQL warehouse health and receive proactive notifications when query performance degrades.
+
+Which feature from Section 4 is specifically intended for this type of monitoring?
+
+A. Lakehouse Alerts
+
+B. Delta Sharing
+
+C. Materialized Views
+
+D. Unity Catalog Tags

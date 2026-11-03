@@ -1,0 +1,11 @@
+A company wants to create dashboards showing trends in compute usage, cost, and workload activity over time using centrally governed platform metadata.
+
+Which approach is most aligned with the exam guide?
+
+A. Query Databricks system tables
+
+B. Download cluster screenshots daily
+
+C. Export Spark UI pages manually
+
+D. Inspect notebook revision histories
