@@ -1,0 +1,12 @@
+A company needs to process clickstream events in near real time. The solution requires event-time aggregations, late-data handling, and exactly-once recovery after failures.
+
+Which Structured Streaming concepts are MOST relevant?
+
+A. Watermarks and checkpoints
+
+B. VACUUM and OPTIMIZE
+
+C. Metric Views and Alerts
+
+D. Catalogs and Schemas
+
