@@ -1,0 +1,12 @@
+A team needs a custom function that can be centrally governed and reused across multiple SQL workloads in Unity Catalog.
+
+Which solution is MOST appropriate?
+
+A. Python script stored on DBFS
+
+B. Manual SQL copy-and-paste
+
+C. Unity Catalog function
+
+D. Materialised view
+
