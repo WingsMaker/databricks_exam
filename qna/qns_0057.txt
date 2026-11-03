@@ -1,4 +1,4 @@
-values through a controlled process.
+A compliance requirement states that certain confidential values must be replaced with surrogate tokens that can later be mapped back to the original values through a controlled process.
 
 Which technique best aligns with this requirement?
 
