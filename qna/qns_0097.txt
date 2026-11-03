@@ -1,0 +1,16 @@
+A data architect is reviewing a table with the following characteristics:
+
+12 TB table
+Queries typically filter on customer hierarchy attributes
+Almost no queries filter on ingestion date
+Query patterns evolve over time
+
+Which design concern is MOST important?
+
+A. Matching clustering strategy to access patterns
+
+B. Adding table comments
+
+C. Creating more schemas
+
+D. Building Auto Loader pipelines

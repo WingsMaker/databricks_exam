@@ -1,0 +1,13 @@
+An engineer proposes partitioning a table by customer_id.
+
+The table contains 500 million distinct customers.
+
+Which Section 9 principle should raise concern?
+
+A. Compaction should be avoided
+
+B. Partitioning should align with data grain and access patterns
+
+C. Metric Views cannot be used
+
+D. Materialized Views require clustering

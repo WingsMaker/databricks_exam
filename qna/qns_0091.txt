@@ -1,0 +1,13 @@
+A retailer stores 8 billion sales records in a Delta table. Most queries filter by sale_date, and analysts almost always query a few days or weeks at a time.
+
+The data engineering team is designing the table layout.
+
+Which approach is MOST appropriate?
+
+A. Partition by sale_date
+
+B. Cluster by sale_date
+
+C. Create a Metric View
+
+D. Use a Materialized View instead of a table

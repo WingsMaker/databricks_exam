@@ -1,0 +1,14 @@
+A company has both of the following requirements:
+
+Every report must use the same definition of "Active Customer".
+Dashboard response times must be under two seconds.
+
+Which design is MOST appropriate?
+
+A. Metric View only
+
+B. Materialized View only
+
+C. Metric View plus Materialized View
+
+D. Additional clustering only

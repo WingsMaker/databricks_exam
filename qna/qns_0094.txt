@@ -1,0 +1,15 @@
+A reporting team maintains separate dashboards for Sales, Finance, and Operations.
+
+Each dashboard independently calculates "Gross Margin" using slightly different SQL logic.
+
+Executives frequently see conflicting numbers.
+
+What is the MOST appropriate solution?
+
+A. Create a Materialized View containing Gross Margin
+
+B. Create a Metric View defining Gross Margin once
+
+C. Partition the table by business unit
+
+D. Add comments to dashboards explaining the calculation

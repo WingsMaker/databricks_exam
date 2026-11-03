@@ -1,0 +1,13 @@
+A dashboard performs a 12-table join and multiple aggregations whenever users open it.
+
+The SQL logic is correct, but performance is poor because the same computations are repeated thousands of times per day.
+
+Which solution best addresses the problem?
+
+A. Metric View
+
+B. Materialized View
+
+C. Column Mask
+
+D. Governed Tag

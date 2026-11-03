@@ -1,0 +1,13 @@
+A business intelligence team uses a pre-computed monthly revenue table.
+
+The table loads quickly, but analysts still disagree about the meaning of "Net Revenue" because different teams define it differently.
+
+What additional modeling component is MOST likely required?
+
+A. Additional partitioning
+
+B. Metric View
+
+C. Compaction
+
+D. Delta Cache

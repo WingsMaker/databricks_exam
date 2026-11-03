@@ -1,0 +1,18 @@
+A data platform team is designing a governed analytics environment.
+
+Requirements:
+
+Standardised KPI definitions
+Fast dashboard performance
+Scalable storage layout
+Efficient querying of large datasets
+
+Which solution best satisfies all requirements?
+
+A. Metric Views only
+
+B. Materialized Views only
+
+C. Partitioning and clustering only
+
+D. Metric Views, Materialized Views, and appropriate physical table design

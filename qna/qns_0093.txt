@@ -1,0 +1,13 @@
+A streaming ingestion system loads data every few minutes, creating thousands of small files per day.
+
+After several months, query performance begins degrading.
+
+Which action best aligns with the data-modeling objective?
+
+A. Add column masks
+
+B. Compact files to maintain balanced file sizes
+
+C. Create additional schemas
+
+D. Replace Delta with CSV

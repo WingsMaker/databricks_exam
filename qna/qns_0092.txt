@@ -1,0 +1,13 @@
+A customer analytics table is queried by more than 30 different attributes, including customer ID, region, loyalty tier, marketing segment, and account status.
+
+The set of commonly filtered columns changes every few months.
+
+Which design choice is MOST appropriate?
+
+A. Partition by every frequently queried column
+
+B. Use Liquid Clustering aligned to access patterns
+
+C. Create one table per query pattern
+
+D. Add more Materialized Views
