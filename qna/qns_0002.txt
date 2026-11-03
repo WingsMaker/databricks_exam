@@ -1,0 +1,12 @@
+A serverless job fails during startup because two Python packages require incompatible versions of the same dependency.
+
+What is the MOST likely area the engineer should investigate?
+
+A. Watermark configuration
+
+B. Delta table optimisation settings
+
+C. Dependency conflicts between external libraries
+
+D. Lakeflow Job control-flow operators
+
