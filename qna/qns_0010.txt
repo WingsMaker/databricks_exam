@@ -1,0 +1,12 @@
+A team wants automated tests that verify both DataFrame contents and schema correctness before code is promoted to production.
+
+Which set of testing tools is most closely aligned with the exam guide?
+
+A. assertDataFrameEqual and assertSchemaEqual
+
+B. OPTIMIZE and VACUUM
+
+C. Auto Loader and Lakehouse Federation
+
+D. Delta Cache and Query Profile
+
