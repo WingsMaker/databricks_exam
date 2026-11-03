@@ -1,0 +1,12 @@
+A large dataset contains sales transactions. The business wants total revenue broken down by region and month.
+
+Which operation is MOST appropriate?
+
+A. CDC
+
+B. Aggregation
+
+C. Column masking
+
+D. Lakehouse Federation
+

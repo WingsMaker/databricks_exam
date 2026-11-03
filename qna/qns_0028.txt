@@ -1,0 +1,12 @@
+A data engineering pipeline should enrich product descriptions by generating AI-derived categories before records move to downstream layers.
+
+Which exam-guide objective best matches this use case?
+
+A. AI functions for enrichment and classification
+
+B. Query profiling
+
+C. Lakeflow Connect CDC
+
+D. Data purging
+

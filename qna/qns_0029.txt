@@ -1,0 +1,12 @@
+A Lakeflow Pipeline receives occasionally malformed records. Business requirements state that invalid records should continue through the pipeline but must be routed to a separate location for later review.
+
+Which expectation behaviour most closely matches the requirement?
+
+A. Fail processing
+
+B. Quarantine bad records
+
+C. Delete source files
+
+D. Drop the entire batch
+

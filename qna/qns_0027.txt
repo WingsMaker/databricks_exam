@@ -1,0 +1,12 @@
+A company wants to classify incoming support tickets using a foundation model directly from SQL without manually exporting data to another system.
+
+Which Section 3 capability is most directly applicable?
+
+A. Liquid Clustering
+
+B. ai_query
+
+C. Lakehouse Federation
+
+D. Delta Cache
+

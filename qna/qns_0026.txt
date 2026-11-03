@@ -1,0 +1,13 @@
+A team receives API responses as JSON strings and wants to convert them into a semi-structured data type suitable for flexible querying.
+
+Which function is most relevant?
+
+A. parse_json
+
+B. collect_set
+
+C. current_timestamp
+
+D. coalesce
+
+S

@@ -1,0 +1,12 @@
+An engineer needs to extract "customer_id" from a VARIANT column containing semi-structured data.
+
+Which functionality is designed for this purpose?
+
+A. VACUUM
+
+B. variant_get
+
+C. OPTIMIZE
+
+D. Lakeflow Connect
+

@@ -1,0 +1,12 @@
+A bronze table stores raw JSON payloads with different structures from different producers. Engineers want to store the payloads without enforcing a fixed schema during ingestion.
+
+Which approach best aligns with the exam guide?
+
+A. Convert every payload to CSV
+
+B. Store as a STRING and use regex exclusively
+
+C. Parse into a VARIANT column
+
+D. Flatten into hundreds of columns during ingestion
+

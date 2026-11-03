@@ -1,0 +1,12 @@
+A data engineer needs to calculate each customer's running total purchase amount over time while preserving individual transaction rows.
+
+Which transformation is MOST appropriate?
+
+A. Window function
+
+B. Cross join
+
+C. Materialized view
+
+D. Column mask
+

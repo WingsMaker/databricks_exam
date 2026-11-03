@@ -1,0 +1,12 @@
+A pipeline must combine records from a customer table and an orders table using the customer ID field.
+
+Which transformation is MOST appropriate?
+
+A. Watermark
+
+B. Join
+
+C. Auto Loader
+
+D. Expectation
+

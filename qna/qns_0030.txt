@@ -1,0 +1,12 @@
+A dataset contains mandatory business keys. If any record is missing a required key, processing must stop immediately so that downstream systems are not affected.
+
+Which expectation action best fits the requirement?
+
+A. Quarantine
+
+B. Ignore
+
+C. Fail
+
+D. Aggregate
+
