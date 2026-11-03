@@ -1,0 +1,12 @@
+A data engineering team wants to deploy the same jobs, pipelines, and configuration across development, staging, and production environments. Each environment requires slightly different settings, and deployments must integrate with CI/CD processes.
+
+Which approach best meets these requirements?
+
+A. Export resources from the UI and manually import them into each environment
+
+B. Store resource definitions in a Declarative Automation Bundle with environment-specific targets
+
+C. Create resources separately in each workspace
+
+D. Use notebooks only and avoid declarative resource definitions
+
