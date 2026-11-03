@@ -1,0 +1,12 @@
+A production Spark job is running significantly slower than expected. The engineer needs detailed information about stages, tasks, shuffle operations, and execution behaviour.
+
+Which tool should be consulted first?
+
+A. Unity Catalog Explorer
+
+B. Spark UI
+
+C. Git Folder History
+
+D. Lakehouse Alerts
+

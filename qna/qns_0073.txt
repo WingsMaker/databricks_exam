@@ -1,0 +1,11 @@
+An engineer is troubleshooting high workspace costs and wants governed operational metadata that can be queried using SQL.
+
+Which source is most aligned with this requirement?
+
+A. System Tables
+
+B. Watermarks
+
+C. Git Branches
+
+D. Delta Cache

@@ -1,0 +1,11 @@
+A Lakeflow Job failed because a temporary downstream system outage occurred. The issue has been fixed, and the team wants to rerun only the failed parts of the workflow rather than the entire workflow.
+
+Which capability best fits this requirement?
+
+A. Job Repairs
+
+B. VACUUM
+
+C. ABAC Policies
+
+D. OpenSharing

@@ -1,0 +1,11 @@
+A scheduled job normally runs for one business unit at a time. An operator needs to rerun the job against a different business unit without modifying the underlying job definition.
+
+Which feature is most relevant?
+
+A. Delta Cache
+
+B. Parameter Overrides
+
+C. Deletion Vectors
+
+D. Predictive Optimization

@@ -1,0 +1,9 @@
+Which file is most closely associated with defining resources and deployment configuration for Declarative Automation Bundles?
+
+A. requirements.txt
+
+B. databricks.yml
+
+C. setup.py
+
+D. spark-defaults.conf

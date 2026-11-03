@@ -1,0 +1,11 @@
+A query is performing poorly. The engineer needs to investigate join strategies, data-skipping effectiveness, and shuffle behaviour.
+
+Which tool is most appropriate?
+
+A. Auto Loader
+
+B. Query Profile
+
+C. Lakeflow Connect
+
+D. Delta Sharing

@@ -1,0 +1,11 @@
+An engineer is investigating a failed job run and wants the broadest set of diagnostic sources covered by Section 8 objectives.
+
+Which combination best matches the exam guide?
+
+A. Spark UI, Cluster Logs, System Tables, and Query Profiles
+
+B. Delta Cache, CDF, and VACUUM
+
+C. Auto Loader, OpenSharing, and Clean Rooms
+
+D. Tags, Comments, and Metric Views

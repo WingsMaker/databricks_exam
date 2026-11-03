@@ -1,0 +1,11 @@
+A job fails intermittently, and the engineer needs to examine driver and executor output generated during job execution.
+
+Which source is most directly relevant?
+
+A. Column Masks
+
+B. Metric Views
+
+C. Cluster Logs
+
+D. Governed Tags
