@@ -1,0 +1,11 @@
+A downstream application only needs rows that changed since the previous run and must process inserts, updates, and deletes efficiently.
+
+Which Delta Lake capability best fits the requirement?
+
+A. Delta Cache
+
+B. Change Data Feed (CDF)
+
+C. Materialized Views
+
+D. Query History

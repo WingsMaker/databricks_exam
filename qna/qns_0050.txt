@@ -1,0 +1,11 @@
+A company stores a massive dataset with access patterns that frequently change over time.
+
+Which statement best reflects the type of optimisation decision covered by Section 5?
+
+A. Always partition by the highest-cardinality column
+
+B. Always use ZORDER regardless of workload
+
+C. Choose between partitioning, ZORDER, and Liquid Clustering based on workload characteristics
+
+D. Avoid all physical data layout optimisations

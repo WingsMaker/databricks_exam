@@ -1,0 +1,11 @@
+A team wants to understand whether poor data skipping is contributing to slow query execution.
+
+Which tool provides information most relevant to this investigation?
+
+A. Query Profile
+
+B. Auto Loader
+
+C. System Billing Tables
+
+D. Lakeflow Jobs

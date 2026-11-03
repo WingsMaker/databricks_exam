@@ -1,0 +1,11 @@
+A data engineering team wants Databricks to automatically handle routine table maintenance tasks and reduce the amount of manual optimisation work required over time.
+
+Which combination best aligns with this goal?
+
+A. Unity Catalog managed tables and Predictive Optimization
+
+B. Delta Cache and Auto Loader
+
+C. Lakehouse Federation and OpenSharing
+
+D. Materialized Views and Metric Views

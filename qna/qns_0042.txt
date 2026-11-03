@@ -1,0 +1,11 @@
+A large Delta table is queried primarily by customer_id, but the query patterns are expected to evolve over time and should not require frequent repartitioning of the table.
+
+Which optimisation approach is most appropriate?
+
+A. Partition by customer_id
+
+B. Liquid Clustering
+
+C. Convert to CSV
+
+D. Disable data skipping

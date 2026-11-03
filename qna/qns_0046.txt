@@ -1,0 +1,11 @@
+A business analyst repeatedly runs very similar queries against the same underlying data during an interactive investigation session.
+
+Which feature is most directly associated with improving performance for repeated reads?
+
+A. Delta Cache
+
+B. Lakehouse Federation
+
+C. OpenSharing
+
+D. Query Alerts

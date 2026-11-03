@@ -1,0 +1,11 @@
+A very large table currently uses partitioning and ZORDER. The team is evaluating whether to move to Liquid Clustering.
+
+According to the Section 5 objectives, the primary evaluation should focus on:
+
+A. Dashboard colours and report layouts
+
+B. Table size and query access patterns
+
+C. Number of Git branches
+
+D. Number of workspace users

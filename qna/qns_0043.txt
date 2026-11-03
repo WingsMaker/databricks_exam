@@ -1,0 +1,13 @@
+A Delta table receives thousands of small UPDATE and DELETE operations every hour through MERGE statements.
+
+The team wants to minimise file rewriting caused by these changes.
+
+Which feature most directly addresses this concern?
+
+A. Delta Cache
+
+B. Materialized Views
+
+C. Deletion Vectors
+
+D. Query Profile

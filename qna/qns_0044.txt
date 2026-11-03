@@ -1,0 +1,11 @@
+An engineer wants Databricks to automatically determine and maintain an effective clustering strategy instead of explicitly choosing clustering columns.
+
+Which feature is most relevant?
+
+A. VACUUM
+
+B. CLUSTER BY AUTO
+
+C. Lakeflow Connect
+
+D. Watermarking

@@ -1,0 +1,11 @@
+A query is running much slower than expected. The engineer needs to determine whether shuffle operations and join strategies are contributing to the problem.
+
+Which tool should be examined first?
+
+A. Git Folder History
+
+B. Query Profile
+
+C. Unity Catalog Explorer
+
+D. Delta Sharing
