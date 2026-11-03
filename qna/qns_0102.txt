@@ -1,0 +1,10 @@
+Which of the following statements accurately describes the behavior and characteristics of the `OPTIMIZE` command with `ZORDER BY` on a Delta Lake table in Databricks?
+
+A. Running `OPTIMIZE` without `ZORDER BY` performs multi-dimensional clustering by default, while `ZORDER BY` alone handles file bin-packing.
+
+B. Bin-packing via `OPTIMIZE` is idempotent, whereas `ZORDER BY` operates incrementally and reorganizes data to improve data skipping by co-locating column information.
+
+C. `ZORDER BY` can be seamlessly combined on the same table that uses liquid clustering to provide a secondary layer of indexing.
+
+D. Running `OPTIMIZE` on a Delta table permanently deletes all historical file versions and commits, replacing the need for a separate `VACUUM` command.
+

@@ -1,0 +1,15 @@
+A data engineer wants to set up a stream-stream inner join between two high-throughput Kafka streams using PySpark Structured Streaming. To prevent memory usage from growing infinitely due to state maintenance for unmatched events, which strategy must be implemented?
+
+
+A.
+Enable Delta Lake Auto-Optimize on the target sink table.
+
+B.
+Set the trigger interval to ProcessingTime('5 minutes') to clear state on every trigger.
+
+C.
+Define watermarks on both streaming DataFrames and specify time bounds on the join condition.
+
+D.
+Use .dropDuplicates() on a non-timestamp column prior to executing the join.
+

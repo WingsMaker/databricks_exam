@@ -1,0 +1,11 @@
+Correct Answer: B
+
+Explanation:
+
+* B is correct: Bin-packing (compaction) is idempotent (running it twice on unchanged data has no effect). `ZORDER BY` operates incrementally to co-locate related column data within data files, which maximizes the effectiveness of Delta Lake's data-skipping statistics. Official documentation details these behaviors under [Optimize data file layout on Databricks Docs](https://docs.databricks.com/aws/en/tables/operations/optimize).
+
+* A is incorrect: `OPTIMIZE` performs bin-packing by default if collocation is not specified, whereas `ZORDER BY` handles the multi-dimensional co-locality.
+
+* C is incorrect: Databricks does not support using `ZORDER BY` on tables configured with liquid clustering; liquid clustering is recommended instead of Z-ordering for new tables.
+
+* D is incorrect: `OPTIMIZE` rewrites active data files into optimized sizes or layouts but does not delete historical versions or transaction logs—that requires the `VACUUM` command.

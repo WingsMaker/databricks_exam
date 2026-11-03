@@ -1,0 +1,12 @@
+When configuring a Databricks Job to run a multi-task workflow, you need to establish dependencies between tasks.
+
+Which of the following statements accurately describes how task dependencies and workflow execution function in Databricks Jobs?
+
+A. Tasks within a job run concurrently by default unless explicit upstream dependencies are defined using the `depends_on` parameter, allowing downstream tasks to execute only after all specified parent tasks succeed.
+
+B. A downstream task automatically inherits the cluster configuration and compute resources of its immediate upstream parent task without requiring separate definition.
+
+C. If a dependent task fails, all concurrent independent tasks running in the same job execution are automatically cancelled and rolled back.
+
+D. Multi-task workflows in Databricks Jobs are restricted to a maximum depth of two levels (parent and child tasks) and cannot support complex directed acyclic graphs (DAGs).
+

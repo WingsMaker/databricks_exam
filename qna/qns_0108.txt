@@ -1,0 +1,11 @@
+When configuring a production Structured Streaming query in Databricks, you need to handle stateful operations (such as aggregations or stream-stream joins) that accumulate state over time.
+
+Which of the following statements accurately describes how watermark and state management function in Databricks Structured Streaming?
+
+A. A watermark defines how late data can arrive and be processed, and it automatically instructs the streaming engine to clean up old state data that is no longer needed.
+
+B. Watermarks are completely optional for all streaming queries, and state data will automatically expire from memory after 24 hours regardless of query configuration.
+
+C. Setting a watermark allows stateful streaming queries to retain all historical key-value states indefinitely to ensure exact-once rollbacks across restarts.
+
+D. A watermark can only be applied to static batch DataFrames and will throw an analysis error if called on a streaming DataFrame.

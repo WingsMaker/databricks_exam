@@ -1,0 +1,14 @@
+A data engineer is configuring an automated workflow in Databricks Jobs to run a multi-task pipeline. Task B depends on the successful completion of Task A. During a routine test, Task A fails due to an intermittent network timeout. Which Databricks Jobs feature should the engineer configure to automatically re-attempt Task A a specified number of times before failing the entire workflow?
+
+
+A.
+Table history rollback
+
+B.
+Task retry policy
+
+C.
+Pipeline watermarking
+
+D.
+Job-level cluster autoscaling

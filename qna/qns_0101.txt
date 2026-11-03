@@ -1,0 +1,11 @@
+Which option correctly describes the behavior of `spark.readStream` versus `spark.read` when loading data from a directory in Databricks?
+
+A. `spark.readStream` processes existing files and then stops execution automatically once the initial batch completes.
+
+B. `spark.readStream` treats the input directory as a continuous stream of data, incrementally ingesting new files as they arrive.
+
+C. `spark.read` creates a streaming DataFrame that actively monitors the source folder for schema updates.
+
+D. `spark.readStream` cannot be used with structured files like Parquet or JSON without an explicit trigger defined.
+
+

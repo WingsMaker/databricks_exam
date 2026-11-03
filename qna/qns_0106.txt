@@ -1,0 +1,15 @@
+When implementing governance controls in Databricks Unity Catalog, you want to restrict access to sensitive customer data using row-level filters and column masks.
+
+Which of the following statements correctly describes a core requirement or limitation when applying row filters and column masks in Unity Catalog?
+
+A. To use Python or Scala logic within a column mask, you must register a Python/Scala UDF and apply it directly as the mask on the table column.
+
+B. Each table can have multiple row filters applied simultaneously to different columns, and a single column can have multiple column masks attached for different user groups.
+
+C. Row filters and column masks can be implemented using SQL user-defined functions (UDFs) registered in Unity Catalog, and each table can have only one row filter while each column can have only one mask.
+
+D. Row filters and column masks can be applied directly to views in the same manner as tables to inherit filtering behaviors dynamically.
+
+
+
+

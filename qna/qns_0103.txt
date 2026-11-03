@@ -1,0 +1,13 @@
+When designing a data pipeline using Lakeflow Declarative Pipelines (formerly Delta Live Tables), you need to choose between **streaming tables** and **materialized views** based on your processing requirements and source characteristics.
+
+Which of the following scenarios describes the correct behavior or ideal use case for a **materialized view** compared to a streaming table?
+
+A. A materialized view processes each input record exactly once from an append-only source and does not recompute past data when the query definition changes.
+
+B. A materialized view recomputes its results as needed to reflect the current state of the data, making it ideal for queries containing aggregations or joins where source data can be updated or deleted.
+
+C. A materialized view is evaluated strictly on demand at query time without persisting any data to storage, exactly like a standard SQL view.
+
+D. A materialized view requires an explicit watermark and is restricted exclusively to handling unbounded streams from message buses like Apache Kafka.
+
+

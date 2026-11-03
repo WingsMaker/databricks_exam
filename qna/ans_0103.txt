@@ -1,0 +1,11 @@
+Correct Answer: B
+
+Explanation:
+
+* B is correct: Materialized views use batch semantics and are designed for transformations, aggregations, or queries involving updates and deletes because they automatically recompute or keep results consistent with the current state of the source data. Official Databricks documentation outlines these concepts under [Pipeline concepts on Databricks Docs](https://docs.databricks.com/aws/en/ldp/concepts/).
+
+* A is incorrect: Processing each input record exactly once from an append-only source describes a streaming table, not a materialized view.
+
+* C is incorrect: Unlike standard views (which are evaluated on demand and not persisted), materialized views *precompute and store* the query's results in Unity Catalog.
+
+* D is incorrect: Streaming semantics, append-only constraints, and watermarks apply to streaming tables, whereas materialized views handle general batch flows and updates/deletes seamlessly.
