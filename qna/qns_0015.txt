@@ -1,0 +1,12 @@
+A business partner uses Databricks, while another partner uses a non-Databricks platform. Your organisation needs to securely share data with both partners.
+
+Which Section 2 objective is most relevant?
+
+A. Materialised Views
+
+B. OpenSharing (D2D and Databricks-to-Open)
+
+C. Metric Views
+
+D. Auto Loader
+

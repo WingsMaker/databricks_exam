@@ -1,0 +1,10 @@
+A team needs to ingest images and PDF documents into a data processing pipeline.
+
+Which file format category mentioned in the exam guide best matches this use case?
+
+A. VARIANT
+
+B. Binary
+
+C. JDBC
+

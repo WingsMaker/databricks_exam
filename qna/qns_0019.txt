@@ -1,0 +1,12 @@
+A data engineer is designing ingestion architecture and must choose among Kafka, Kinesis, Pub/Sub, and cloud storage as sources.
+
+What common theme do these systems share within the exam guide?
+
+A. They are governance tools
+
+B. They are supported ingestion-source categories
+
+C. They are monitoring solutions
+
+D. They are deployment mechanisms
+

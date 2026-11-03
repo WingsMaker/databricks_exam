@@ -1,0 +1,12 @@
+An organisation needs to ingest clickstream events from Apache Kafka into the lakehouse with low latency.
+
+Which source type is specifically identified in the exam guide as a supported ingestion source?
+
+A. Apache Kafka
+
+B. Excel spreadsheets
+
+C. Git repositories
+
+D. Unity Catalog
+

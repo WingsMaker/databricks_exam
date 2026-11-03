@@ -1,0 +1,12 @@
+An engineer must query data stored in an external database while maintaining governance through Unity Catalog permissions and centrally managed connection credentials.
+
+Which feature is designed for this scenario?
+
+A. Lakehouse Federation
+
+B. Auto CDC
+
+C. Structured Streaming
+
+D. Delta Cache
+

@@ -1,0 +1,12 @@
+A company wants to continuously replicate data changes from a PostgreSQL database into Databricks with minimal custom development effort.
+
+Which solution best fits the requirement?
+
+A. Nightly CSV exports to cloud storage
+
+B. Manual JDBC ingestion scripts
+
+C. Lakeflow Connect CDC ingestion
+
+D. Delta Sharing
+

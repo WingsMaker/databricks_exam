@@ -1,0 +1,11 @@
+A company wants to collaborate with another organisation on sensitive data without directly exposing underlying records and while enforcing privacy controls.
+
+Which technology in Section 2 is most closely associated with this requirement?
+
+A. Clean Rooms
+
+B. Query History
+
+C. Predictive Optimisation
+
+D. CLUSTER BY AUTO

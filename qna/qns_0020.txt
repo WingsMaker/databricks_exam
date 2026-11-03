@@ -1,0 +1,12 @@
+A company already stores data in Delta format and wants to capture row-level changes from an upstream source while preserving inserts, updates, and deletes in the target table.
+
+Which Section 2 objective is most closely related?
+
+A. Lakeflow Connect monitoring
+
+B. CDC pipelines using Lakeflow Pipelines with Delta or Iceberg targets
+
+C. OpenSharing
+
+D. Databricks Git folders
+

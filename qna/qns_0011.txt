@@ -1,0 +1,12 @@
+A data engineer must build a pipeline that continuously ingests JSON, CSV, and Parquet files arriving in cloud object storage. New files should be detected automatically without manually tracking which files have already been processed.
+
+Which approach is MOST appropriate?
+
+A. Schedule hourly full-table reloads using JDBC
+
+B. Use Auto Loader to incrementally discover and process new files
+
+C. Export all files to Delta format before ingestion
+
+D. Use Lakehouse Federation to query the files directly
+

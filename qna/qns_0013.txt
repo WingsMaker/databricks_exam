@@ -1,0 +1,12 @@
+A team wants to maintain an Iceberg table that receives insert, update, and delete changes from an operational source system.
+
+Which capability is most directly aligned with this requirement?
+
+A. Unity Catalog tags
+
+B. Lakeflow Pipelines CDC ingestion
+
+C. Query Profile
+
+D. Delta Cache
+
