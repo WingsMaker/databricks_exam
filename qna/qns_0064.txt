@@ -1,0 +1,11 @@
+A team maintains hundreds of tables. They want to provide descriptions explaining how datasets should be used and what each dataset contains.
+
+Which Unity Catalog capability is specifically designed for this purpose?
+
+A. Comments
+
+B. CDF
+
+C. CLUSTER BY AUTO
+
+D. Predictive Optimization

@@ -1,0 +1,11 @@
+A data steward wants data consumers to more easily find datasets containing customer information.
+
+Which approach best aligns with the governance objectives in Section 7?
+
+A. Add governed tags to relevant data assets
+
+B. Increase cluster size
+
+C. Enable Delta Cache
+
+D. Configure Auto Loader

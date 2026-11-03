@@ -1,0 +1,11 @@
+An engineer wants to improve data discoverability without modifying table data or schema structure.
+
+Which Section 7 mechanism best addresses this goal?
+
+A. Tags and comments
+
+B. Deletion vectors
+
+C. Delta cache
+
+D. CDC pipelines

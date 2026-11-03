@@ -1,0 +1,11 @@
+A governance team wants a hierarchy-based access management model that reduces the need for repetitive grants on individual tables.
+
+Which Unity Catalog concept best supports this requirement?
+
+A. Query Profiles
+
+B. Permission inheritance
+
+C. Materialized Views
+
+D. Auto Loader

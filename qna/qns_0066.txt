@@ -1,0 +1,11 @@
+A new table is created tomorrow inside a catalog where analysts were previously granted SELECT privileges at the catalog level.
+
+What access should analysts have to the new table?
+
+A. None until a new grant is issued
+
+B. Ownership
+
+C. SELECT access through inheritance
+
+D. Access only after cluster restart

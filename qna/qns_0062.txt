@@ -1,0 +1,11 @@
+A company wants to classify datasets according to business domains such as Finance, Marketing, and Operations to improve discoverability.
+
+Which Unity Catalog feature is most closely associated with this goal?
+
+A. Query Profiles
+
+B. Tags
+
+C. Materialized Views
+
+D. Lakeflow Jobs

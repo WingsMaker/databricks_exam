@@ -1,0 +1,9 @@
+Which scenario best demonstrates the value of Unity Catalog tags?
+
+A. Storing business metadata for classification and discovery
+
+B. Increasing Spark executor memory
+
+C. Accelerating joins
+
+D. Scheduling jobs

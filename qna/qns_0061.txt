@@ -1,0 +1,11 @@
+A data engineering team wants users to quickly understand a table's purpose, owner, and business context when browsing Unity Catalog.
+
+Which feature is MOST appropriate?
+
+A. Comments
+
+B. Delta Cache
+
+C. Watermarks
+
+D. Deletion Vectors

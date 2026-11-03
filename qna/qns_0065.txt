@@ -1,0 +1,11 @@
+A group is granted a privilege at the catalog level in Unity Catalog.
+
+Assuming no conflicting permissions exist, what happens to schemas and tables within that catalog?
+
+A. Nothing; permissions must be granted separately
+
+B. Privileges are inherited by child objects
+
+C. Ownership transfers automatically
+
+D. Existing tables inherit permissions but future tables do not

@@ -1,0 +1,11 @@
+A data consumer searches Unity Catalog for datasets relevant to customer churn analysis.
+
+Which combination of features from Section 7 would most likely help the consumer identify the appropriate datasets?
+
+A. Delta Cache and Query Profile
+
+B. Watermarks and Checkpoints
+
+C. Tags and Comments
+
+D. Deletion Vectors and CDF
