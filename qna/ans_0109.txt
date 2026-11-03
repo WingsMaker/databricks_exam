@@ -1,0 +1,12 @@
+Correct Answer: A
+
+Explanation:
+
+* A is correct: Liquid Clustering replaces both traditional Hive-style partitioning (`PARTITIONED BY`) and Z-ordering (`ZORDER BY`). It accommodates flexible query patterns across multiple columns, avoids partition skew issues, and operates incrementally—meaning `OPTIMIZE` runs rewrite only files that require clustering rather than executing heavy global rewrites.
+
+* B is incorrect: Liquid Clustering is mutually exclusive with traditional partitioning; tables configured with `CLUSTER BY` cannot be partitioned using `PARTITIONED BY`.
+
+* C is incorrect: `VACUUM` cleans up unreferenced historical data files after a retention threshold—it is not involved in committing or creating clustering indexes. Running `VACUUM` with 0 hours threshold bypasses default safety checks and risks corrupting concurrent reads.
+
+* D is incorrect: Liquid Clustering does not disable compaction; running `OPTIMIZE` on a liquid-clustered table triggers incremental clustering and bin-packing on files that are not yet clustered.
+

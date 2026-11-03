@@ -1,0 +1,51 @@
+A data engineer is building a Structured Streaming pipeline in PySpark to perform a stream-stream inner join between user clicks (`clicks`) and ad impressions (`impressions`). Both streams contain event timestamps (`click_time` and `impression_time`).
+
+The business requirements specify:
+
+1. Data arriving more than 2 hours late based on event time must be dropped.
+2. A click must match an impression that occurred up to 15 minutes prior to the click.
+3. The stream-state size must be bounded so that old state can be automatically evicted by Spark.
+
+Which code snippet correctly configures watermarking and the join condition to meet these requirements?
+
+A.
+clicks_wm = clicks.withWatermark("click_time", "2 hours")
+impressions_wm = impressions.withWatermark("impression_time", "2 hours")
+joined_df = clicks_wm.join(
+    impressions_wm,
+    expr("""
+        click_time &gt;= impression_time AND
+        click_time &lt;= impression_time + interval 15 minutes
+    """)
+)
+
+
+B.
+clicks_wm = clicks.withWatermark("click_time", "15 minutes")
+impressions_wm = impressions.withWatermark("impression_time", "15 minutes")
+joined_df = clicks_wm.join(
+    impressions_wm,
+    expr("""
+        click_time &gt;= impression_time - interval 2 hours AND
+        click_time &lt;= impression_time
+    """)
+)
+
+C.
+joined_df = clicks.join(
+    impressions,
+    expr("""
+        click_time &gt;= impression_time AND
+        click_time &lt;= impression_time + interval 15 minutes
+    """)
+).withWatermark("click_time", "2 hours")
+
+D.
+clicks_wm = clicks.withWatermark("click_time", "2 hours")
+impressions_wm = impressions.withWatermark("impression_time", "2 hours")
+joined_df = clicks_wm.join(
+    impressions_wm,
+    on="user_id",
+    how="inner"
+)
+

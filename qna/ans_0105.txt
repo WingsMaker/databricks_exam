@@ -1,5 +1,7 @@
 Correct Answer: C
 
+Explanation:
+
 Define watermarks on both streaming DataFrames and specify time bounds on the join condition.
 
 For stream-stream joins, defining watermarks on both inputs along with a time constraint in the join predicate allows Spark to bound state retention and evict old state when events fall outside the watermark window.

@@ -1,0 +1,13 @@
+A data engineering team maintains a multi-terabyte Delta table in Databricks that experiences high write volumes and is frequently queried using filters on `transaction_date`, `region_id`, and `customer_id`. Previously, the table was partitioned by `transaction_date` and reorganized using daily `OPTIMIZE ... ZORDER BY (region_id, customer_id)` commands. However, the team faces partition skew and excessive computation costs due to full Z-ordering rewrites.
+
+Which of the following approaches correctly uses Liquid Clustering to optimize performance and reduce cost for this workload?
+
+A. Define Liquid Clustering on `(transaction_date, region_id, customer_id)` without using `PARTITIONED BY`, as Liquid Clustering replaces both traditional partitioning and Z-ordering by incrementally clustering data during writes and compaction.  
+
+B. Retain Hive-style partitioning on `transaction_date` while applying `CLUSTER BY (region_id, customer_id)` to combine partition pruning with liquid indexing.  
+
+C. Replace `ZORDER BY` with Liquid Clustering, but execute `VACUUM RETAIN 0 HOURS` after every write to immediately force the clustering keys to index.  
+
+D. Use Liquid Clustering on `(transaction_date, region_id, customer_id)`, but avoid running `OPTIMIZE` commands because Liquid Clustering disables table compaction.
+
+

@@ -1,5 +1,7 @@
 Correct Answer: B
 
+Explanation:
+
 Task retry policy
 
 Databricks Jobs allows configuring a retry policy for individual tasks, defining parameters such as the maximum number of retry attempts and the timeout interval between retries.
