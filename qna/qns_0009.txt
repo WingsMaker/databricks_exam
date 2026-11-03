@@ -1,0 +1,12 @@
+A notebook task repeatedly runs out of memory when processing large datasets.
+
+Which action is most aligned with the exam guide objective regarding compute selection?
+
+A. Increase watermark delay
+
+B. Choose compute designed for high-memory notebook workloads
+
+C. Convert the workload into a metric view
+
+D. Remove checkpoints
+
