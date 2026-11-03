@@ -2,10 +2,10 @@ Correct Answer: A
 
 Explanation:
 
-* A is correct: A watermark tells the streaming engine how late data can arrive. It is required for stateful operations like stream-to-stream joins or windowed aggregations because it gives the engine the threshold needed to drop old state and prevent memory exhaustion. Official Databricks documentation outlines watermarking under [Apply watermarks to control data staleness on Databricks Docs](https://docs.databricks.com/aws/en/structured-streaming/watermarks).
+A is correct: A watermark tells the streaming engine how late data can arrive. It is required for stateful operations like stream-to-stream joins or windowed aggregations because it gives the engine the threshold needed to drop old state and prevent memory exhaustion. Official Databricks documentation outlines watermarking under [Apply watermarks to control data staleness on Databricks Docs](https://docs.databricks.com/aws/en/structured-streaming/watermarks).
 
-* B is incorrect: State does not automatically expire after 24 hours; without a defined watermark, stateful aggregations and joins will accumulate state indefinitely, eventually causing out-of-memory errors.
+B is incorrect: State does not automatically expire after 24 hours; without a defined watermark, stateful aggregations and joins will accumulate state indefinitely, eventually causing out-of-memory errors.
 
-* C is incorrect: The purpose of a watermark is precisely the opposite of retaining state indefinitely—it allows old state to be *cleaned up* and discarded.
+C is incorrect: The purpose of a watermark is precisely the opposite of retaining state indefinitely—it allows old state to be *cleaned up* and discarded.
 
-* D is incorrect: Watermarks (`withWatermark`) are designed specifically for streaming DataFrames (`spark.readStream`) and cannot be used on static batch DataFrames.
+D is incorrect: Watermarks (`withWatermark`) are designed specifically for streaming DataFrames (`spark.readStream`) and cannot be used on static batch DataFrames.
