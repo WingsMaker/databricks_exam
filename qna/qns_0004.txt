@@ -1,0 +1,12 @@
+A streaming ingestion solution must automatically detect and process new files arriving in cloud storage with minimal operational overhead.
+
+Which technology should be included?
+
+A. Auto Loader
+
+B. Query Profile
+
+C. Metric Views
+
+D. Lakehouse Federation
+
