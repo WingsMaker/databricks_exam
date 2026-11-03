@@ -1,0 +1,12 @@
+A pipeline aggregates transactional data. Business users require results that include corrections and late-arriving updates to historical records and can be refreshed on a schedule.
+
+Which object should be used?
+
+A. Streaming table
+
+B. Temporary view
+
+C. Materialised view
+
+D. Checkpoint location
+
