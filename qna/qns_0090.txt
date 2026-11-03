@@ -1,0 +1,11 @@
+A company is designing a scalable analytical platform.
+
+According to the Section 9 objectives, which combination represents the most complete data-modeling strategy?
+
+A. Partitioning, clustering, compaction, dimensional modelling, Materialized Views, and Metric Views
+
+B. Delta Cache, Query Profile, and Cluster Logs
+
+C. Auto Loader, Lakeflow Connect, and OpenSharing
+
+D. Row Filters, Column Masks, and ABAC Policies

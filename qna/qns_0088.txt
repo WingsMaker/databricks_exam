@@ -1,0 +1,14 @@
+A team needs both:
+
+one authoritative business-metric definition, and
+pre-computed aggregates for dashboard performance.
+
+Which combination best satisfies both requirements?
+
+A. Delta Cache and Watermarks
+
+B. Lakeflow Jobs and Query Profile
+
+C. Metric Views and Materialized Views
+
+D. Auto Loader and Lakehouse Federation

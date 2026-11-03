@@ -1,0 +1,11 @@
+A table contains billions of records. Most queries filter by customer identifiers and related attributes rather than by partition columns.
+
+Which table-layout technique is most directly associated with optimising these access patterns?
+
+A. Column masking
+
+B. Materialized Views
+
+C. Clustering
+
+D. Delta Sharing

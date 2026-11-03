@@ -1,0 +1,13 @@
+Several dashboards repeatedly execute expensive joins and aggregations against a sales fact table.
+
+The team wants pre-computed results available for fast query performance.
+
+Which feature is most appropriate?
+
+A. Query Profile
+
+B. Materialized View
+
+C. Governed Tags
+
+D. Watermark

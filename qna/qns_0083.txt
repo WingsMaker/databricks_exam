@@ -1,0 +1,11 @@
+A large table contains a growing number of very small files created through incremental ingestion.
+
+Which maintenance goal is specifically called out in Section 9?
+
+A. Balanced file sizes through compaction
+
+B. Row-level security
+
+C. AI classification
+
+D. Lakehouse Federation

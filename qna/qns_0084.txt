@@ -1,0 +1,11 @@
+A data engineering team is designing analytical reporting structures using facts and dimensions.
+
+Which modelling approach is most closely aligned with the Section 9 objectives?
+
+A. Dimensional modelling
+
+B. Event sourcing
+
+C. Git branching
+
+D. Workflow orchestration

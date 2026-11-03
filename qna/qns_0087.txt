@@ -1,0 +1,11 @@
+A company wants a single governed definition for "Active Customer" that can be reused consistently across many reports.
+
+Which capability best fits this requirement?
+
+A. Materialized View
+
+B. Metric View
+
+C. Deletion Vectors
+
+D. Change Data Feed

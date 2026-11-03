@@ -1,0 +1,9 @@
+When designing table layouts for large data assets, Section 9 specifically mentions evaluating which relationship?
+
+A. Clustering and relationship access patterns
+
+B. Git branches and deployment targets
+
+C. Watermarks and checkpoints
+
+D. Tags and comments

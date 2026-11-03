@@ -1,0 +1,11 @@
+A team wants all jobs, pipelines, and deployment settings stored in source control and deployed consistently across development, testing, and production environments.
+
+Which approach is most aligned with the exam guide?
+
+A. Manual workspace creation
+
+B. Declarative Automation Bundles
+
+C. Cluster Log Delivery
+
+D. Query Profiles

@@ -1,0 +1,11 @@
+A business metric called "Net Revenue" is currently implemented differently by multiple teams, leading to inconsistent reporting results.
+
+Which feature most directly addresses this governance problem?
+
+A. Metric View
+
+B. Delta Cache
+
+C. Cluster Logs
+
+D. Auto Loader
