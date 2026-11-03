@@ -2,12 +2,12 @@ Correct Answer: A
 
 Explanation:
 
-* A is correct: In PySpark Structured Streaming, stream-stream joins require:
+A is correct: In PySpark Structured Streaming, stream-stream joins require:
   1. Watermarks defined on both input streaming DataFrames *before* the join call to establish the threshold for late data (2 hours).
   2. A time-range constraint in the join predicate (e.g., `click_time &gt;= impression_time AND click_time &lt;= impression_time + interval 15 minutes`) defining how far apart in event time two matching records can be. This allows Spark's state store to compute state eviction bounds and prevent unbounded state growth.
 
-* B is incorrect: The watermark duration defines late-data tolerance (2 hours), not the join window (15 minutes). Setting the watermark to 15 minutes drops valid late data arriving between 15 minutes and 2 hours.
+B is incorrect: The watermark duration defines late-data tolerance (2 hours), not the join window (15 minutes). Setting the watermark to 15 minutes drops valid late data arriving between 15 minutes and 2 hours.
 
-* C is incorrect: Watermarks must be applied to the input DataFrames *prior* to joining; applying `.withWatermark()` downstream on the joined DataFrame does not allow the streaming state engine to cleanup join state.
+C is incorrect: Watermarks must be applied to the input DataFrames *prior* to joining; applying `.withWatermark()` downstream on the joined DataFrame does not allow the streaming state engine to cleanup join state.
 
-* D is incorrect: Joining solely on `user_id` without an event-time range predicate prevents Spark from bounding the state duration, leading to memory growth and eventual out-of-memory errors.
+D is incorrect: Joining solely on `user_id` without an event-time range predicate prevents Spark from bounding the state duration, leading to memory growth and eventual out-of-memory errors.
