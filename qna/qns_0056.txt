@@ -1,0 +1,11 @@
+An engineer must protect personally identifiable information by replacing values with irreversible representations while preserving the ability to identify duplicate records.
+
+Which technique best matches this description?
+
+A. Partitioning
+
+B. Hashing
+
+C. Liquid Clustering
+
+D. Materialized Views

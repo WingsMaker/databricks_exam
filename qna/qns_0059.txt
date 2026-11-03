@@ -1,0 +1,11 @@
+A customer invokes a GDPR right-to-erasure request and requires all relevant personal data to be removed according to corporate retention policies.
+
+Which Section 6 objective most directly applies?
+
+A. Metric Views
+
+B. Data purging strategy using Delta Lake and Unity Catalog features
+
+C. Delta Cache
+
+D. Query History

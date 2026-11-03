@@ -1,0 +1,11 @@
+An organisation has hundreds of PII columns spread across many current and future tables. They want one centrally managed policy that automatically masks any column tagged as PII.
+
+Which solution is most appropriate?
+
+A. Create a dynamic view for every table
+
+B. Manually alter every column
+
+C. Use an ABAC policy with governed tags and column masking
+
+D. Create a separate catalog for every PII table

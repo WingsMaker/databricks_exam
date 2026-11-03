@@ -1,0 +1,11 @@
+A company wants all incoming batch and streaming datasets to undergo automated PII detection and masking before downstream consumption.
+
+Which Section 6 objective is most directly related?
+
+A. Query profiling
+
+B. PII detection and masking controls using Unity Catalog features
+
+C. Delta Sharing
+
+D. Change Data Feed

@@ -1,0 +1,11 @@
+A data engineer is designing permissions for a new analytics platform. The requirement is that users should receive only the minimum privileges necessary to perform their jobs.
+
+Which security principle best aligns with this requirement?
+
+A. Open access
+
+B. Shared ownership
+
+C. Least privilege
+
+D. Full catalog inheritance

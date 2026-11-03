@@ -1,0 +1,11 @@
+A company wants to secure Unity Catalog objects so that analysts can query tables but cannot modify them.
+
+Which approach best supports this requirement?
+
+A. Grant ownership of the tables
+
+B. Apply appropriate ACLs
+
+C. Disable Unity Catalog
+
+D. Use Delta Cache

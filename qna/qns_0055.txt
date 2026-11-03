@@ -1,0 +1,11 @@
+A security team wants to hide only specific sensitive columns while still allowing users to view the remaining columns in a table.
+
+Which feature is designed for this use case?
+
+A. Lakehouse Federation
+
+B. Column masks
+
+C. VACUUM
+
+D. Auto Loader

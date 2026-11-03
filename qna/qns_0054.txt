@@ -1,0 +1,11 @@
+A company wants users in the Europe region to see only records belonging to Europe, regardless of which table they query.
+
+Which capability is most closely associated with this requirement?
+
+A. Row filters
+
+B. Delta Cache
+
+C. Predictive Optimization
+
+D. Materialized Views

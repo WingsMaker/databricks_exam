@@ -1,0 +1,11 @@
+values through a controlled process.
+
+Which technique best aligns with this requirement?
+
+A. Tokenization
+
+B. Aggregation
+
+C. Delta Cache
+
+D. Watermarking

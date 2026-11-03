@@ -1,0 +1,11 @@
+An organisation wants security rules to scale automatically as new datasets are created, instead of manually configuring masks and filters on every table.
+
+Which approach is most aligned with the exam guide?
+
+A. Create individual policies on every object
+
+B. Use governed tags with ABAC policies
+
+C. Disable inheritance
+
+D. Store data in CSV files
