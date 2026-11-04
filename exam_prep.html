@@ -32,7 +32,7 @@
 	<input type="range" min="0.5" max="2" value="1" step="0.1" id="rate" />
 	<br>
 	<label for="ratio">Font size : smaller to bigger</label>
-	<input type="range" min="1" max="8" value="2" step="1" id="ratio" />
+	<input type="range" min="1" max="8" value="3" step="1" id="ratio" />
 </div>
 <hr>
 <p>Powered by WingsMaker</p>
@@ -46,7 +46,7 @@ let desktop_mode = 1,
     qnmode = 0,
     max_qns = 110,
     voice = new SpeechSynthesisUtterance();
-resize_screen(2);
+resize_screen(3);
 function display_content(t) {
     var n,
         e = 0 == qnmode ? "qns_" : "ans_",
