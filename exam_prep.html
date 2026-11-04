@@ -46,6 +46,8 @@ let desktop_mode = 1,
     qnmode = 0,
     max_qns = 110,
     voice = new SpeechSynthesisUtterance();
+document.getElementById("rate").value = 1;	
+document.getElementById("ratio").value = 3;	
 function display_content(t) {
     var n,
         e = 0 == qnmode ? "qns_" : "ans_",
