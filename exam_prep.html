@@ -112,8 +112,8 @@ function resize_screen(e) {
           display_content(1))
         : (document.getElementById("exam").innerHTML = "Sorry this app already disabled."),
     window.innerWidth <= 1024 && window.innerHeight <= 2048
-        ? (resize_screen(4), (document.getElementById("rate").value = 6))
-        : (resize_screen(3), (document.getElementById("rate").value = 4)),
+        ? (resize_screen(3))
+        : (resize_screen(4)),
     $(document).ready(function () {
         $("#viewqn").click(function () {
             (qnmode = 1 - qnmode),
