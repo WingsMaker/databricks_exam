@@ -40,25 +40,12 @@
 
 <script>
 console.clear();
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-let voice_rate = urlParams.get('rate');
-let txt_ratio = urlParams.get('ratio');
-if (voice_rate == null) {
-	voice_rate = "1";
-}	
-if (txt_ratio == null) {
-	txt_ratio = "3";
-}		
 const synth = window.speechSynthesis;
 var arr_charts = [];
 let desktop_mode = 1,
     qnmode = 0,
     max_qns = 110,
     voice = new SpeechSynthesisUtterance();
-document.getElementById("rate").value = voice_rate;	
-document.getElementById("ratio").value = txt_ratio;	
-resize_screen(txt_ratio);
 function display_content(t) {
     var n,
         e = 0 == qnmode ? "qns_" : "ans_",
