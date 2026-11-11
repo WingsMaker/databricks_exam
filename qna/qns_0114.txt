@@ -1,0 +1,11 @@
+When managing a large Delta Lake table in Databricks, you notice that frequent small append operations are creating an excessive number of small files ("small file problem"), which significantly degrades query performance.
+
+Which of the following approaches or commands should you use to resolve this issue while ensuring data is organized to optimize future queries?
+
+A. Run VACUUM with a retention period of 0 hours to immediately delete and compact all small underlying data files.
+
+B. Run the OPTIMIZE command (optionally combined with ZORDER BY or liquid clustering) to compact small files into larger, optimized files and improve data-skipping efficiency.
+
+C. Switch the table format from Delta to standard Parquet and enable spark.sql.parquet.autoCompactEnabled = true.
+
+D. Execute ALTER TABLE table_name RECOVER PARTITIONS to force the Delta transaction log to merge all small file metadata pointers.

@@ -1,0 +1,11 @@
+When configuring a secure and production-ready Databricks workspace environment integrated with Unity Catalog, you need to provision secure access to cloud object storage.
+
+Which of the following objects in Unity Catalog securely connects Databricks to cloud object storage without requiring users or jobs to manage cloud credentials directly?
+
+A. External Location
+
+B. Catalog-level Schema Link
+
+C. Instance Profile Credential Wrapper
+
+D. Cluster Access Control List (ACL)

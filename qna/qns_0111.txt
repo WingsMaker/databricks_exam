@@ -1,0 +1,11 @@
+When configuring a cluster in Databricks for a production data engineering workload, you decide to enable Photon, Databricks' native vectorized query engine.
+
+Which of the following statements accurately describes the compatibility and performance behavior of Photon on Databricks?
+
+A. Photon accelerates queries by rewriting SQL and DataFrame operations into native C++ vectorized execution, supporting standard Delta, Parquet, and CSV file formats as well as most SQL commands.
+
+B. Photon requires all custom Python User-Defined Functions (UDFs) to be rewritten in C++ before they can execute on a photon-enabled cluster.
+
+C. Enabling Photon automatically replaces the default Apache Spark garbage collection mechanism with a native memory-managed heap that eliminates JVM overhead entirely.
+
+D. Photon is exclusively designed for streaming workloads and cannot accelerate batch SQL queries or Delta table maintenance operations like OPTIMIZE.

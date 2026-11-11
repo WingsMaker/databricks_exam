@@ -1,0 +1,15 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+ON VIOLATION FAIL UPDATE instructs the pipeline to immediately stop processing and fail the transaction when a data record violates the specified expectation constraint. Official documentation details DLT constraints under Manage data quality with Delta Live Tables on Databricks Docs.
+
+B is incorrect: 
+ON VIOLATION DROP ROW discards the violating record silently without failing the pipeline.
+
+C is incorrect: 
+ON VIOLATION WARN records the violation in the metrics log and allows the record to pass through, without halting execution.
+
+D is incorrect: 
+RETRY is not a valid clause option for DLT expectations.

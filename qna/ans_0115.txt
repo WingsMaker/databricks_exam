@@ -1,0 +1,15 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+An External Location in Unity Catalog combines a cloud storage path with a storage credential, allowing users and workloads to securely access data in cloud object storage without embedding credentials in code or exposing storage keys. Official documentation details this under Manage external locations and storage credentials on Databricks Docs.
+
+B is incorrect: 
+Catalog-level schema links are not a mechanism for connecting storage credentials to cloud object storage.
+
+C is incorrect: 
+Instance profiles are legacy cluster-level IAM configurations; Unity Catalog manages cloud permissions primarily via Storage Credentials and External Locations rather than raw instance profiles alone.
+
+D is incorrect: 
+Cluster ACLs govern who can attach to or manage compute resources, not how cloud object storage connections are authorized.

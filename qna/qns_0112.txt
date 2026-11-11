@@ -1,0 +1,11 @@
+When configuring a Delta Live Tables (DLT) pipeline or managing a Delta table in Databricks, you need to handle data quality expectations effectively.
+
+Which of the following built-in expectations clauses correctly halts pipeline execution when a data quality violation occurs in a Databricks DLT pipeline?
+
+A. CONSTRAINT valid_id EXPECT (id IS NOT NULL) ON VIOLATION FAIL UPDATE
+
+B. CONSTRAINT valid_id EXPECT (id IS NOT NULL) ON VIOLATION DROP ROW
+
+C. CONSTRAINT valid_id EXPECT (id IS NOT NULL) ON VIOLATION WARN
+
+D. CONSTRAINT valid_id EXPECT (id IS NOT NULL) ON VIOLATION RETRY

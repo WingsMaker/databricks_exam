@@ -1,0 +1,15 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+Photon is a native vectorized execution engine written in C++ that speeds up SQL and DataFrame operations. It operates seamlessly on standard table formats (like Delta and Parquet) and file formats (like CSV and JSON) while supporting a wide array of Spark SQL commands. Official documentation details Photon's capabilities under What is Photon? on Databricks Docs.
+
+B is incorrect: 
+Custom Python UDFs cannot be directly vectorized by Photon and will fall back to standard Python worker processes for execution, though they do not need to be manually rewritten in C++ to run.
+
+C is incorrect: 
+Photon accelerates query execution and data processing tasks, but it runs alongside the JVM and does not completely eliminate JVM overhead or replace the underlying Spark architecture.
+
+D is incorrect: 
+Photon accelerates both batch and streaming queries, as well as operations like scans, joins, and aggregations across Delta tables.

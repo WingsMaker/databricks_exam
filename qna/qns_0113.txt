@@ -1,0 +1,9 @@
+When configuring data ingestion from cloud storage using Auto Loader (cloudFiles) in Databricks, which of the following file discovery modes is recommended when working with object stores that do not efficiently support directory listing or when you want to avoid expensive list operations on large directories?
+
+A. Setting cloudFiles.useNotifications to true to utilize cloud notification services (such as AWS SNS/SQS or Azure Event Grid) for pushing file arrival events directly to the pipeline.
+
+B. Setting cloudFiles.fileFindMaxDepth to 1 to restrict Auto Loader from scanning subdirectories.
+
+C. Setting cloudFiles.inferColumnTypes to false to disable automatic schema detection.
+
+D. Switching the input format from cloudFiles back to standard spark.readStream.format("parquet") without setting any options.

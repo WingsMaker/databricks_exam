@@ -1,0 +1,16 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+Auto Loader can use file notification services (cloudFiles.useNotifications = "true") and cloud queues (like AWS SQS or Azure Event Grid) to receive notifications when new files are added. This avoids the need to perform costly directory listings (list calls) on large buckets, which can become slow and expensive at scale. Official documentation outlines this configuration under Configure file notification mode for Auto Loader on Databricks Docs.
+
+B is incorrect: 
+fileFindMaxDepth limits directory traversal depth, but it does not replace directory listing calls with push-based cloud notification queues.
+
+C is incorrect: 
+inferColumnTypes governs schema inference behavior, not file discovery mechanisms.
+
+D is incorrect: 
+Standard spark.readStream file sources rely entirely on directory listing and do not incorporate Auto Loader's optimized notification-based incremental file tracking.
+

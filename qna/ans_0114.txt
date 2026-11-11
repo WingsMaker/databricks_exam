@@ -1,0 +1,15 @@
+Correct Answer: B
+
+Explanation:
+
+B is correct: 
+The OPTIMIZE command performs bin-packing to combine small files into larger, optimized files (typically around 1 GB). When combined with ZORDER BY or table-level liquid clustering, it also co-locates related data within files to maximize data skipping. Official documentation details this under Optimize data file layout on Databricks Docs.   
+
+A is incorrect: 
+VACUUM removes historical data files and transaction log checkpoints past a retention threshold to reclaim storage space; it does not perform file compaction or solve the small file problem.
+
+C is incorrect: 
+Switching away from Delta would lose ACID transactions and native table optimization features, and spark.sql.parquet.autoCompactEnabled is not a standard configuration for resolving Delta small file issues.
+
+D is incorrect: 
+RECOVER PARTITIONS (or MSCK REPAIR TABLE) is used to discover unmanaged partition directories in Hive-style partitioned external tables, not to compact data files.
