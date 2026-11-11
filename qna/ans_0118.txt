@@ -1,0 +1,15 @@
+Correct Answer: B
+
+Explanation:
+
+B is correct: 
+Configuring cluster log delivery to external cloud storage or monitoring services ensures that driver and executor logs persist even after a cluster is terminated, which is essential for long-term troubleshooting and auditing. Official documentation details this under Configure cluster log delivery on Databricks Docs.
+
+A is incorrect: 
+Local driver logs on ephemeral storage are lost when the cluster terminates or if the driver node restarts due to an error.
+
+C is incorrect: 
+Spark UI history and event logs are retained for a limited time or require persistent storage configuration (like event log storage), and they are not stored indefinitely in the Databricks control plane database.
+
+D is incorrect: 
+There is no SHOW JOB LOGS SQL command in Databricks; job and task logs are accessed via the Databricks UI, Jobs API, or configured cloud storage paths.

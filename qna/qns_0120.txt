@@ -1,0 +1,11 @@
+When monitoring resource utilization and scaling behavior on a Databricks cluster, you need to understand how autoscaling interacts with worker nodes and shuffle operations.
+
+Which of the following statements accurately describes the behavior of cluster autoscaling in Databricks?
+
+A. Autoscaling immediately terminates idle worker nodes the exact second a stage completes, regardless of any shuffle fetch requests or pending tasks in other stages.
+
+B. Autoscaling dynamically adds or removes worker nodes based on workload resource utilization, waiting for nodes to be truly idle before safely removing them to prevent interrupting active tasks or shuffle partitions.
+
+C. Autoscaling requires all worker nodes to be statically pre-allocated to fixed cloud virtual machine instances before starting the job.
+
+D. Autoscaling is restricted exclusively to all-purpose interactive notebooks and cannot be enabled on automated production jobs clusters.

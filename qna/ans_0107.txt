@@ -2,11 +2,15 @@ Correct Answer: A
 
 Explanation:
 
-A is correct: Tasks in a Databricks Job execute independently by default. To sequence them, you use the `depends_on` configuration to define parent-child relationships, ensuring a downstream task triggers only when its upstream dependencies complete successfully. Official documentation details this under [Configure task dependencies in Databricks Jobs](https://www.google.com/search?q=https://docs.databricks.com/aws/en/workflows/jobs/create-jobs).
+A is correct: 
+Tasks in a Databricks Job execute independently by default. To sequence them, you use the `depends_on` configuration to define parent-child relationships, ensuring a downstream task triggers only when its upstream dependencies complete successfully. Official documentation details this under [Configure task dependencies in Databricks Jobs](https://www.google.com/search?q=https://docs.databricks.com/aws/en/workflows/jobs/create-jobs).
 
-B is incorrect: Tasks do not automatically inherit cluster configurations from parent tasks; each task in a multi-task job must explicitly define its own cluster or reference a shared job-level cluster.
+B is incorrect: 
+Tasks do not automatically inherit cluster configurations from parent tasks; each task in a multi-task job must explicitly define its own cluster or reference a shared job-level cluster.
 
-C is incorrect: The failure of one task does not automatically cancel or roll back other concurrent, independent tasks unless a fail-fast policy or specific failure handling is configured for the job.
+C is incorrect: 
+The failure of one task does not automatically cancel or roll back other concurrent, independent tasks unless a fail-fast policy or specific failure handling is configured for the job.
 
-D is incorrect: Databricks Jobs fully support complex Directed Acyclic Graphs (DAGs) with multiple branches and levels of dependencies, not just simple two-tier parent-child structures.
+D is incorrect: 
+Databricks Jobs fully support complex Directed Acyclic Graphs (DAGs) with multiple branches and levels of dependencies, not just simple two-tier parent-child structures.
 

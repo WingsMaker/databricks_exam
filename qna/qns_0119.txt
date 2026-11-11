@@ -1,0 +1,11 @@
+When configuring a high-performance Apache Spark job in Databricks, you want to optimize how data is shuffled across the cluster to prevent memory pressure or out-of-memory errors during large shuffle operations.
+
+Which of the following Spark SQL configurations controls the default number of shuffle partitions used when executing wide transformations like groupBy or join?
+
+A. spark.sql.shuffle.partitions
+
+B. spark.default.parallelism
+
+C. spark.databricks.io.cache.enabled
+
+D. spark.sql.files.maxPartitionBytes

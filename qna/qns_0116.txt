@@ -1,0 +1,11 @@
+When designing and managing a production Databricks workflow, you need to configure task types and execution parameters properly.
+
+Which of the following task types allows you to run an existing Databricks Job as a component of a larger multi-task workflow?
+
+A. Run Job task type
+
+B. Notebook task type only, as jobs cannot be nested inside other jobs
+
+C. Pipeline task type configured with streaming triggers
+
+D. Spark JAR task type tied to an external metastore

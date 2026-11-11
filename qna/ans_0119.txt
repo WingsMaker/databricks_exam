@@ -1,0 +1,15 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+spark.sql.shuffle.partitions determines the number of partitions that are used when data is shuffled across the network for Spark SQL operations such as joins or aggregations (e.g., default value is typically 200). Official documentation covers tuning properties under Apache Spark configuration on Databricks Docs.
+
+B is incorrect: 
+spark.default.parallelism sets the default number of partitions in RDDs returned by operations like parallelize when no other number is specified, rather than controlling SQL shuffle operations.
+
+C is incorrect: 
+spark.databricks.io.cache.enabled governs the Databricks Disk Cache (formerly SSD cache) for speeding up remote storage reads, not shuffle partitions.
+
+D is incorrect: 
+spark.sql.files.maxPartitionBytes controls the maximum number of bytes to pack into a single partition when reading files from a file source, not shuffle execution.

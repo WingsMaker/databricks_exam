@@ -2,12 +2,16 @@ Correct Answer: B
 
 Explanation:
 
-B is correct: `spark.readStream` configures a streaming DataFrame using Structured Streaming. It treats data source directories as append-only streams, incrementally reading new files added to the directory over time.
+B is correct: 
+`spark.readStream` configures a streaming DataFrame using Structured Streaming. It treats data source directories as append-only streams, incrementally reading new files added to the directory over time.
 
-A is incorrect: Structured Streaming queries continue running continuously (or until stopped/triggered to complete a batch), whereas batch reads (`spark.read`) finish once the available data is processed.
+A is incorrect: 
+Structured Streaming queries continue running continuously (or until stopped/triggered to complete a batch), whereas batch reads (`spark.read`) finish once the available data is processed.
 
-C is incorrect: `spark.read` creates a static DataFrame representing a point-in-time snapshot of the dataset; it does not monitor folders.
+C is incorrect: 
+`spark.read` creates a static DataFrame representing a point-in-time snapshot of the dataset; it does not monitor folders.
 
-D is incorrect: Structured Streaming supports file sources such as Parquet, JSON, CSV, and ORC directly out of the box without requiring specialized custom triggers just to read the format.
+D is incorrect: 
+Structured Streaming supports file sources such as Parquet, JSON, CSV, and ORC directly out of the box without requiring specialized custom triggers just to read the format.
 
 

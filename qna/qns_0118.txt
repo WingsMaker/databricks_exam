@@ -1,0 +1,11 @@
+When monitoring data pipelines or debugging failures in Databricks Jobs, you often need to analyze job execution logs and set up appropriate alerting mechanisms.
+
+Which of the following approaches is recommended for capturing and analyzing task logs across distributed worker nodes in a Databricks Job execution?
+
+A. Relying solely on local driver logs stored temporarily on the primary driver node's ephemeral root volume.
+
+B. Configuring cluster log delivery to send driver and executor logs to cloud object storage (such as Amazon S3 or Azure Blob Storage) or integrating with diagnostic logging services like AWS CloudWatch or Azure Monitor.
+
+C. Using standard Spark UI logs, which persist indefinitely inside the Databricks control plane database even after the cluster is terminated.
+
+D. Executing a SHOW JOB LOGS SQL command directly within any notebook to stream real-time logs from all active executors.

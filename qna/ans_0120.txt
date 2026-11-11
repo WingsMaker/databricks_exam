@@ -1,0 +1,15 @@
+Correct Answer: B
+
+Explanation:
+
+B is correct: 
+Databricks cluster autoscaling dynamically scales worker nodes up or down depending on resource demand. When scaling down, Databricks waits until nodes are truly idle (no active tasks, shuffling data, or cached blocks) before removing them to ensure job reliability. Official documentation details autoscaling behavior under Configure cluster autoscaling on Databricks Docs.
+
+A is incorrect: 
+Nodes are not terminated the exact second a stage finishes if shuffle data or subsequent tasks still require those executors.
+
+C is incorrect: 
+Autoscaling explicitly allows clusters to dynamically adjust their node count between a defined minimum and maximum range.
+
+D is incorrect: 
+Autoscaling is fully supported on both interactive (all-purpose) clusters and automated job clusters.

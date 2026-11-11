@@ -1,0 +1,15 @@
+Correct Answer: A
+
+Explanation:
+
+A is correct: 
+The Run Job task type in Databricks Jobs enables you to trigger another existing job as a task within a multi-task workflow. This facilitates modular workflow design and orchestration. Official documentation details task types under Configure tasks in Databricks Jobs on Databricks Docs.
+
+B is incorrect: 
+Multi-task workflows support a wide variety of task types—including notebooks, Python scripts, SQL queries, DLT pipelines, and other Databricks jobs—not just notebooks.
+
+C is incorrect: 
+While pipelines can be triggered as part of workflows, the specific task type designed to nest or run an existing job is the Run Job task.
+
+D is incorrect: 
+A Spark JAR task executes compiled Java or Scala code, not orchestrates sub-jobs.

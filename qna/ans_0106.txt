@@ -2,11 +2,15 @@ Correct Answer: C
 
 Explanation:
 
-C is correct: Unity Catalog enforces that each table can have only one row filter, and each individual table column can have only one column mask. These are implemented using SQL user-defined functions (UDFs). Official documentation details this behavior under [Manually apply row filters and column masks on Databricks Docs](https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/manually-apply).
+C is correct: 
+Unity Catalog enforces that each table can have only one row filter, and each individual table column can have only one column mask. These are implemented using SQL user-defined functions (UDFs). Official documentation details this behavior under [Manually apply row filters and column masks on Databricks Docs](https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/manually-apply).
 
-A is incorrect: Python or Scala logic cannot be bound directly as a column mask; you must first create the Python/Scala UDF and then wrap it inside a SQL UDF, which is what gets applied as the mask. Attempting to apply a Python UDF directly results in a compilation/routine error.
+A is incorrect: 
+Python or Scala logic cannot be bound directly as a column mask; you must first create the Python/Scala UDF and then wrap it inside a SQL UDF, which is what gets applied as the mask. Attempting to apply a Python UDF directly results in a compilation/routine error.
 
-B is incorrect: A table is limited to *only one* row filter (though the UDF can combine multiple columns/conditions), and a column can only carry *one* mask. Different audiences must be handled via branching logic (such as `is_account_group_member()`) inside that single function.
+B is incorrect: 
+A table is limited to *only one* row filter (though the UDF can combine multiple columns/conditions), and a column can only carry *one* mask. Different audiences must be handled via branching logic (such as `is_account_group_member()`) inside that single function.
 
-D is incorrect: Unity Catalog explicitly does not support applying row-level security or column masks to standard views.
+D is incorrect: 
+Unity Catalog explicitly does not support applying row-level security or column masks to standard views.
 
