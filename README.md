@@ -22,6 +22,12 @@ Exam Prep:
 •	Databricks Certification FAQ  
 </pre>
 
-Download app
-https://media.webassessor.com/respondus/windows/LockDownBrowserOEMSetup.msi
+Download app<br>
+https://media.webassessor.com/respondus/windows/LockDownBrowserOEMSetup.msi<br>
+<br>
+The web app<br>
+https://wingsmaker.github.io/databricks_exam/exam_prep.html<br>
+
+
+
 
