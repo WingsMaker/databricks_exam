@@ -2,42 +2,299 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="icon" type="image/x-icon" href="https://wingsmaker.github.io/Github/kh.ico">
 <title>Exam Studies App</title>
 <script type="text/javascript" src="https://wingsmaker.github.io/Github/jquery.min.js"></script>
+<style>
+    :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --border-color: #334155;
+        --text-color: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent-color: #3b82f6;
+        --accent-hover: #2563eb;
+        --success-color: #10b981;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 800px;
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 12px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    header a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    header a:hover {
+        text-decoration: underline;
+    }
+
+    #exam {
+        font-size: 1rem;
+    }
+
+    #qns h3 {
+        color: #60a5fa;
+        margin-top: 0;
+    }
+
+    #qns p {
+        line-height: 1.6;
+    }
+
+    #cht img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+
+    .slider-group {
+        margin: 20px 0;
+    }
+
+    .slider-group label {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        margin-bottom: 6px;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        accent-color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    input[type="submit"], button {
+        background-color: var(--border-color);
+        color: var(--text-color);
+        border: none;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        height: 48px;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.1s;
+    }
+
+    input[type="submit"]:hover, button:hover {
+        background-color: #475569;
+    }
+
+    input[type="submit"]:active {
+        transform: scale(0.98);
+    }
+
+    #viewqn {
+        background-color: var(--accent-color);
+    }
+    #viewqn:hover {
+        background-color: var(--accent-hover);
+    }
+
+    .controls-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 20px;
+        border-top: 1px solid var(--border-color);
+        padding-top: 16px;
+    }
+
+    .control-item span {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+
+    footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+</style>
 </head>
-<body style="background-color:black;color:white"> 
-<h3><a id="a-title" style="color:white" href="https://wingsmaker.github.io/databricks_exam/">Home</a></h3>
-<h1>Databricks Exam Study App</h1>
-<br>
-<div id="exam" style="font-size: 15px">
-	<div id="qns"></div>
-	<br>
-	<div id="cht"></div>
-	<br>
-	<input type="range" min="1" max="110" value="1" id="qrng" style="width: 100%">
-	<label for="qrng">Side thru to choose from the questions</label>
-	<br>
-	<br>
-	<br>
-	<input id="viewqn" type="submit" value="Answers" style="font-size: 15px;height: 60px;width: 75px"/>
-	<input id="prev" type="submit" value="Prev" style="font-size: 15px;height: 60px;width: 75px"/>
-	<input id="next" type="submit" value="Next" style="font-size: 15px;height: 60px;width: 75px"/>
-	<input id="voice" type="submit" value="Voice" style="font-size: 15px;height: 60px;width: 75px"/>
-	<br>
-	<label for="rate">Voice speed : slower to faster</label><br>
-	<input type="range" min="0.5" max="2" value="1" step="0.1" id="rate" oninput="this.nextElementSibling.value = this.value"/>
-	<br>
-	<label for="ratio">Font size : smaller to bigger</label><br>
-	<input type="range" min="3" max="8" value="3" step="1" id="ratio" oninput="this.nextElementSibling.value = this.value"/>
+<body> 
+
+<header>
+    <h1>Databricks Exam Study App</h1>
+    <a id="a-title" href="https://wingsmaker.github.io/databricks_exam/Databricks-Certified-Data-Engineer-Professional-Exam-Guide-9-Oct-2026.pdf">Home</a>
+</header>
+
+<div class="container">
+    <div id="exam">
+        <div id="qns"></div>
+        <div id="cht"></div>
+        
+        <div class="slider-group">
+            <input type="range" min="1" max="115" value="1" id="qrng">
+            <label for="qrng">Slide through to choose questions</label>
+        </div>
+        
+        <div class="btn-grid">
+            <input id="viewqn" type="submit" value="Answers"/>
+            <input id="prev" type="submit" value="Prev"/>
+            <input id="next" type="submit" value="Next"/>
+            <input id="voice" type="submit" value="Voice"/>
+        </div>
+        
+        <div class="controls-grid">
+            <div class="control-item">
+                <label for="rate">Voice speed</label>
+                <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate"/>
+            </div>
+            <div class="control-item">
+                <label for="ratio">Font size scaling</label>
+                <input type="range" min="14" max="24" value="16" step="1" id="ratio"/>
+            </div>
+        </div>
+    </div>
 </div>
-<hr>
-<p>Powered by WingsMaker</p>
+
+<footer>Powered by WingsMaker</footer>
+
 </body>
 <script>
-console.clear();const synth=window.speechSynthesis;var arr_charts=[];let desktop_mode=1,qnmode=0,max_qns=110,voice=new SpeechSynthesisUtterance;function display_content(e){var t,n=0==qnmode?"qns_":"ans_",i="000"+e.toString();i="https://wingsmaker.github.io/databricks_exam/qna/"+n+(i=i.substr(i.length-4))+".txt",fetch(i).then(e=>e.text()).then(n=>{n=n.replaceAll("\n","<br>"),n="<h3>Question #"+e.toString()+":</h3><p>"+n+"</p>",document.getElementById("qns").innerHTML=n,0==qnmode?(t="https://wingsmaker.github.io/databricks_exam/qna/img_"+(t=(t="000"+e.toString()).substr(t.length-4))+".jpg",arr_charts.includes(e)?(n="<img src='"+t+"' height='300'>",document.getElementById("cht").innerHTML=n):document.getElementById("cht").innerHTML=""):document.getElementById("cht").innerHTML=""})}function textToSpeech(e){voice.text=e,synth.speak(voice)}function resize_screen(e){0!=e&&(document.getElementById("exam").style.fontSize=(5*e).toString()+"px",document.getElementById("viewqn").style.fontSize=(5*e).toString()+"px",document.getElementById("viewqn").style.width=(25*e).toString()+"px",document.getElementById("viewqn").style.height=(20*e).toString()+"px",document.getElementById("prev").style.fontSize=(5*e).toString()+"px",document.getElementById("prev").style.width=(25*e).toString()+"px",document.getElementById("prev").style.height=(20*e).toString()+"px",document.getElementById("next").style.fontSize=(5*e).toString()+"px",document.getElementById("next").style.width=(25*e).toString()+"px",document.getElementById("next").style.height=(20*e).toString()+"px",document.getElementById("voice").style.fontSize=(5*e).toString()+"px",document.getElementById("voice").style.width=(25*e).toString()+"px",document.getElementById("voice").style.height=(20*e).toString()+"px",desktop_mode=1)}voice.rate=1,voice.pitch=1,voice.volume=1,voice.lang="en-SG",0<max_qns?(document.getElementById("qrng").max=max_qns,document.getElementById("qrng").min="1",document.getElementById("qrng").value="1",display_content(1)):document.getElementById("exam").innerHTML="Sorry this app already disabled.",window.innerWidth<=1024&&window.innerHeight<=2048?resize_screen(3):resize_screen(4),$(document).ready(function(){$("#viewqn").click(function(){qnmode=1-qnmode,document.getElementById("viewqn").value=0==qnmode?"Answers":"Questions",r=document.getElementById("qrng").value,ii=parseInt(r),display_content(ii)})}),$(document).ready(function(){$("#prev").click(function(){r=document.getElementById("qrng").value,i=parseInt(r),1<i&&(--i,r=i.toString()),document.getElementById("qrng").value=r,display_content(i)})}),$(document).ready(function(){$("#next").click(function(){m=parseInt(document.getElementById("qrng").max),r=document.getElementById("qrng").value,i=parseInt(r),i<m&&(i+=1,r=i.toString()),document.getElementById("qrng").value=r,display_content(i)})}),$(document).ready(function(){$("#voice").click(function(){var e=document.getElementById("qns").innerHTML;document.getElementById("qrng"),textToSpeech(e=(e=(e=(e=e.replaceAll("</","<")).replaceAll("<h3>"," ")).replaceAll("<p>"," ")).replaceAll("<br>","\n"))})}),$(document).ready(function(){$("#screen").click(function(){desktop_mode=1-desktop_mode,(0==desktop_mode?mobile_screen:desktop_screen)()})}),document.getElementById("qrng").oninput=function(){r=document.getElementById("qrng").value,ii=parseInt(r),display_content(ii)},document.getElementById("rate").oninput=function(){r=document.getElementById("rate").value,voice.rate=r},document.getElementById("ratio").oninput=function(){r=document.getElementById("ratio").value,resize_screen(r)};
+console.clear();
+const synth = window.speechSynthesis;
+var arr_charts = [];
+let qnmode = 0, max_qns = 115;
+let voice = new SpeechSynthesisUtterance();
+
+function display_content(e) {
+    var t, n = 0 == qnmode ? "qns_" : "ans_";
+    var i = "000" + e.toString();
+    i = "https://wingsmaker.github.io/databricks_exam/qna/" + n + (i = i.substr(i.length - 4)) + ".txt";
+    
+    fetch(i).then(e => e.text()).then(n => {
+        n = n.replaceAll("\n", "<br>");
+        n = "<h3>Question #" + e.toString() + ":</h3><p>" + n + "</p>";
+        document.getElementById("qns").innerHTML = n;
+        
+        if (0 == qnmode) {
+            t = "https://wingsmaker.github.io/databricks_exam/qna/img_" + (t = ("000" + e.toString())).substr(t.length - 4) + ".jpg";
+            document.getElementById("cht").innerHTML = arr_charts.includes(e) ? "<img src='" + t + "'>" : "";
+        } else {
+            document.getElementById("cht").innerHTML = "";
+        }
+    });
+}
+
+function textToSpeech(e) {
+    voice.text = e;
+    synth.speak(voice);
+}
+
+voice.rate = 1;
+voice.pitch = 1;
+voice.volume = 1;
+voice.lang = "en-SG";
+
+if (0 < max_qns) {
+    document.getElementById("qrng").max = max_qns;
+    document.getElementById("qrng").min = "1";
+    document.getElementById("qrng").value = "1";
+    display_content(1);
+} else {
+    document.getElementById("exam").innerHTML = "Sorry this app already disabled.";
+}
+
+$(document).ready(function() {
+    $("#viewqn").click(function() {
+        qnmode = 1 - qnmode;
+        document.getElementById("viewqn").value = 0 == qnmode ? "Answers" : "Questions";
+        let r = document.getElementById("qrng").value;
+        display_content(parseInt(r));
+    });
+
+    $("#prev").click(function() {
+        let r = document.getElementById("qrng").value;
+        let i = parseInt(r);
+        if (1 < i) {
+            i--;
+            document.getElementById("qrng").value = i.toString();
+            display_content(i);
+        }
+    });
+
+    $("#next").click(function() {
+        let m = parseInt(document.getElementById("qrng").max);
+        let r = document.getElementById("qrng").value;
+        let i = parseInt(r);
+        if (i < m) {
+            i++;
+            document.getElementById("qrng").value = i.toString();
+            display_content(i);
+        }
+    });
+
+    $("#voice").click(function() {
+        var e = document.getElementById("qns").innerHTML;
+        textToSpeech(e = e.replaceAll("</", "<").replaceAll("<h3>", " ").replaceAll("<p>", " ").replaceAll("<br>", "\n"));
+    });
+});
+
+document.getElementById("qrng").oninput = function() {
+    display_content(parseInt(this.value));
+};
+
+document.getElementById("rate").oninput = function() {
+    voice.rate = this.value;
+};
+
+document.getElementById("ratio").oninput = function() {
+    document.getElementById("exam").style.fontSize = this.value + "px";
+};
 </script>
 </html>
